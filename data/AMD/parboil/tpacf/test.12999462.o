@@ -1,0 +1,1 @@
+Usage: ./main <-d data_file_name> <-r rnd_file_name> <-m rnd_count> <-p count> <-o file_name>

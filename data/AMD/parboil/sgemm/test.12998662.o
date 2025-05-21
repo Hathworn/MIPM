@@ -1,0 +1,10 @@
+load A
+load B
+GFLOPs = 2.09715
+IO        : 0.067043
+Kernel    : 0.001125
+Copy      : 0.001690
+Driver    : 0.001137
+Compute   : 1.687419
+CPU/Kernel Overlap: 0.001125
+Timer Wall Time: 1.758164

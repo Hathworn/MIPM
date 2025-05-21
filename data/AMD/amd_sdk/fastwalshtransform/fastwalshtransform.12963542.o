@@ -1,0 +1,9 @@
+Usage
+-h, --help                                        Display this information
+-q, --quiet                                       Quiet mode. Suppress all text output.
+-e, --verify                                      Verify results against reference implementation.
+-t, --timing                                      Print timing.
+-v, --version                                     AMD APP SDK version string.
+-d, --deviceId                                    Select deviceId to be used[0 to N-1 where N is number devices available].
+-x, --length                                      Length of input array
+-i, --iterations                                  Number of iterations for kernel execution

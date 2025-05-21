@@ -1,0 +1,14 @@
+
+IO        : 1.166918
+ -Input     : 1.151268
+ -Output    : 0.015650
+Kernel    : 57.746733
+ -PreScanKernel      : 6.242144
+ -PostPreMems        : 29.156271
+ -IntermediatesKernel: 9.053325
+ -MainKernel         : 6.431239
+ -FinalKernel        : 6.863564
+Driver    : 57.771333
+Compute   : 0.000417
+CPU/Kernel Overlap: 57.746733
+Timer Wall Time: 58.985481

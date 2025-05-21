@@ -1,0 +1,4 @@
+kernel-name,dispatch,gpu-id,queue-id,queue-index,tid,grd,wgr,lds,scr,vgpr,sgpr,fbar,sig,time,VALUBusy,performance,LDSInsts,LDSBankConflict,L1MemoryBusy,L1MemoryStalled,L2WriteUnitStalled,L2CacheHit
+"_Z11mean_kerneliiPfS_",0,0,0,7,34378,65536,256,0,0,2,1,2048,0x0,0.000095,16.505644,1901.938383,0,0.000000,60.891014,26.829772,0.000000,98.721315
+"_Z13reduce_kerneliiPfS_",1,0,0,9,34378,16777216,256,0,0,1,1,2240,0x0,0.000256,4.059256,532.512125,0,0.000000,4.484356,2.739228,0.000000,96.670275
+"_Z12covar_kerneliiPfS_",2,0,0,11,34378,65536,256,0,0,4,2,0,0x0,0.015054,23.090020,2594.601323,0,0.000000,70.024836,28.807413,0.000000,99.990416

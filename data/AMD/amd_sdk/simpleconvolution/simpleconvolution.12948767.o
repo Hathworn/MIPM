@@ -1,0 +1,6 @@
+Executing kernel for 1 iterations
+-------------------------------------------
+Verifying non-Separable Convolution Kernel result - Passed!
+
+Verifying Separable Convolution Kernel result - Passed!
+

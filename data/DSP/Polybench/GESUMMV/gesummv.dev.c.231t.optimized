@@ -1,0 +1,245 @@
+
+;; Function gesummv_kernel (gesummv_kernel, funcdef_no=3, decl_uid=4159, cgraph_uid=4, symbol_order=8)
+
+Removing basic block 15
+Removing basic block 16
+Removing basic block 17
+Removing basic block 18
+Removing basic block 19
+Removing basic block 20
+Removing basic block 21
+Removing basic block 22
+Removing basic block 23
+Removing basic block 24
+__attribute__((section (".global")))
+gesummv_kernel (int n, float alpha, float beta, float * A, float * B, float * tmp, float * x, float * y)
+{
+  unsigned int ivtmp.42;
+  sizetype ivtmp.37;
+  sizetype ivtmp.26;
+  float stmp_y_val_55.21;
+  vector(4) float vect__19.20;
+  vector(4) float vect__18.19;
+  vector(4) float * vectp.18;
+  float stmp_tmp_val_53.16;
+  vector(4) float vect__16.15;
+  vector(4) float vect__15.14;
+  vector(4) float vect__11.11;
+  vector(4) float * vectp.10;
+  int tmp.8;
+  unsigned int niters_vector_mult_vf.7;
+  unsigned int bnd.6;
+  int j;
+  float y_val;
+  float tmp_val;
+  int i;
+  int end_i;
+  int start_i;
+  int remainder;
+  int base;
+  int group_size;
+  int tid;
+  int _1;
+  int _2;
+  int _3;
+  _Bool _4;
+  int _5;
+  int _6;
+  int _9;
+  long unsigned int _11;
+  float * _12;
+  float _13;
+  long unsigned int _15;
+  float * _16;
+  float _17;
+  float _21;
+  float _25;
+  float * _56;
+  sizetype _65;
+  long unsigned int _82;
+  unsigned int _93;
+  float _100;
+  float * _101;
+  float _104;
+  float * _105;
+  long unsigned int _106;
+  float _108;
+  float * _109;
+  long unsigned int _115;
+  int _117;
+  unsigned int _120;
+  float _126;
+  int _132;
+  long unsigned int _134;
+  float * _135;
+  float _136;
+  long unsigned int _138;
+  float * _139;
+  float _140;
+  float * _143;
+  float _144;
+  unsigned int _148;
+
+  <bb 2> [local count: 14598062]:
+  tid_36 = get_thread_id ();
+  group_size_38 = get_group_size ();
+  base_40 = n_39(D) / group_size_38;
+  remainder_41 = n_39(D) % group_size_38;
+  _1 = tid_36 * base_40;
+  _2 = MIN_EXPR <tid_36, remainder_41>;
+  start_i_42 = _1 + _2;
+  _3 = base_40 + start_i_42;
+  _4 = tid_36 < remainder_41;
+  _5 = (int) _4;
+  end_i_43 = _3 + _5;
+  if (start_i_42 < end_i_43)
+    goto <bb 3>; [89.00%]
+  else
+    goto <bb 14>; [11.00%]
+
+  <bb 3> [local count: 12992275]:
+  ivtmp.37_124 = (sizetype) start_i_42;
+  _120 = (unsigned int) n_39(D);
+  _148 = (unsigned int) start_i_42;
+  ivtmp.42_119 = _120 * _148;
+  _93 = _120 + 4294967295;
+  bnd.6_89 = _120 >> 2;
+  _65 = bnd.6_89 w* 16;
+  niters_vector_mult_vf.7_88 = _120 & 4294967292;
+  tmp.8_87 = (int) niters_vector_mult_vf.7_88;
+  goto <bb 13>; [100.00%]
+
+  <bb 4> [local count: 105119324]:
+  _6 = (int) ivtmp.42_125;
+  if (_93 <= 2)
+    goto <bb 8>; [10.00%]
+  else
+    goto <bb 5>; [90.00%]
+
+  <bb 5> [local count: 94607391]:
+  _82 = _6 w* 4;
+  vectp.10_84 = A_51(D) + _82;
+  vectp.18_58 = B_54(D) + _82;
+
+  <bb 6> [local count: 567644349]:
+  # tmp_val_61 = PHI <0.0(5), tmp_val_53(6)>
+  # y_val_63 = PHI <0.0(5), y_val_55(6)>
+  # ivtmp.26_94 = PHI <0(5), ivtmp.26_57(6)>
+  vect__11.11_79 = MEM[base: vectp.10_84, index: ivtmp.26_94, offset: 0B];
+  vect__15.14_76 = MEM[base: x_52(D), index: ivtmp.26_94, offset: 0B];
+  vect__16.15_75 = vect__15.14_76 * vect__11.11_79;
+  stmp_tmp_val_53.16_74 = BIT_FIELD_REF <vect__16.15_75, 32, 0>;
+  stmp_tmp_val_53.16_73 = tmp_val_61 + stmp_tmp_val_53.16_74;
+  stmp_tmp_val_53.16_72 = BIT_FIELD_REF <vect__16.15_75, 32, 32>;
+  stmp_tmp_val_53.16_71 = stmp_tmp_val_53.16_72 + stmp_tmp_val_53.16_73;
+  stmp_tmp_val_53.16_70 = BIT_FIELD_REF <vect__16.15_75, 32, 64>;
+  stmp_tmp_val_53.16_69 = stmp_tmp_val_53.16_70 + stmp_tmp_val_53.16_71;
+  stmp_tmp_val_53.16_68 = BIT_FIELD_REF <vect__16.15_75, 32, 96>;
+  tmp_val_53 = stmp_tmp_val_53.16_68 + stmp_tmp_val_53.16_69;
+  vect__18.19_30 = MEM[base: vectp.18_58, index: ivtmp.26_94, offset: 0B];
+  vect__19.20_29 = vect__18.19_30 * vect__15.14_76;
+  stmp_y_val_55.21_27 = BIT_FIELD_REF <vect__19.20_29, 32, 0>;
+  stmp_y_val_55.21_26 = stmp_y_val_55.21_27 + y_val_63;
+  stmp_y_val_55.21_114 = BIT_FIELD_REF <vect__19.20_29, 32, 32>;
+  stmp_y_val_55.21_111 = stmp_y_val_55.21_26 + stmp_y_val_55.21_114;
+  stmp_y_val_55.21_112 = BIT_FIELD_REF <vect__19.20_29, 32, 64>;
+  stmp_y_val_55.21_113 = stmp_y_val_55.21_111 + stmp_y_val_55.21_112;
+  stmp_y_val_55.21_110 = BIT_FIELD_REF <vect__19.20_29, 32, 96>;
+  y_val_55 = stmp_y_val_55.21_110 + stmp_y_val_55.21_113;
+  ivtmp.26_57 = ivtmp.26_94 + 16;
+  if (ivtmp.26_57 != _65)
+    goto <bb 6>; [83.33%]
+  else
+    goto <bb 7>; [16.67%]
+
+  <bb 7> [local count: 94607391]:
+  if (niters_vector_mult_vf.7_88 == _120)
+    goto <bb 11>; [25.00%]
+  else
+    goto <bb 8>; [75.00%]
+
+  <bb 8> [local count: 81467476]:
+  # tmp_val_92 = PHI <0.0(4), tmp_val_53(7)>
+  # y_val_91 = PHI <0.0(4), y_val_55(7)>
+  # j_90 = PHI <0(4), tmp.8_87(7)>
+  _9 = _6 + j_90;
+  _11 = _9 w* 4;
+  _12 = A_51(D) + _11;
+  _13 = *_12;
+  _15 = j_90 w* 4;
+  _16 = x_52(D) + _15;
+  _17 = *_16;
+  tmp_val_19 = .FMA (_13, _17, tmp_val_92);
+  _56 = B_54(D) + _11;
+  _126 = *_56;
+  y_val_122 = .FMA (_17, _126, y_val_91);
+  j_123 = j_90 + 1;
+  if (n_39(D) > j_123)
+    goto <bb 9>; [89.00%]
+  else
+    goto <bb 11>; [11.00%]
+
+  <bb 9> [local count: 72506056]:
+  _132 = _6 + j_123;
+  _134 = _132 w* 4;
+  _135 = A_51(D) + _134;
+  _136 = *_135;
+  _138 = _15 + 4;
+  _139 = x_52(D) + _138;
+  _140 = *_139;
+  tmp_val_142 = .FMA (_136, _140, tmp_val_19);
+  _143 = B_54(D) + _134;
+  _144 = *_143;
+  y_val_146 = .FMA (_140, _144, y_val_122);
+  j_147 = j_90 + 2;
+  if (n_39(D) > j_147)
+    goto <bb 10>; [89.00%]
+  else
+    goto <bb 11>; [11.00%]
+
+  <bb 10> [local count: 64530389]:
+  _117 = _6 + j_147;
+  _115 = _117 w* 4;
+  _109 = A_51(D) + _115;
+  _108 = *_109;
+  _106 = _15 + 8;
+  _105 = x_52(D) + _106;
+  _104 = *_105;
+  tmp_val_102 = .FMA (_104, _108, tmp_val_142);
+  _101 = B_54(D) + _115;
+  _100 = *_101;
+  y_val_98 = .FMA (_100, _104, y_val_146);
+
+  <bb 11> [local count: 105119324]:
+  # tmp_val_86 = PHI <tmp_val_102(10), tmp_val_19(8), tmp_val_53(7), tmp_val_142(9)>
+  # y_val_85 = PHI <y_val_98(10), y_val_122(8), y_val_55(7), y_val_146(9)>
+
+  <bb 12> [local count: 118111601]:
+  # tmp_val_62 = PHI <tmp_val_86(11), 0.0(13)>
+  # y_val_64 = PHI <y_val_85(11), 0.0(13)>
+  _21 = beta_45(D) * y_val_64;
+  _25 = .FMA (alpha_44(D), tmp_val_62, _21);
+  MEM[base: y_46(D), index: ivtmp.37_7, step: 4, offset: 0B] = _25;
+  MEM[base: tmp_48(D), index: ivtmp.37_7, step: 4, offset: 0B] = tmp_val_62;
+  ivtmp.37_8 = ivtmp.37_7 + 1;
+  ivtmp.42_131 = _120 + ivtmp.42_125;
+  i_149 = (int) ivtmp.37_8;
+  if (end_i_43 > i_149)
+    goto <bb 13>; [89.00%]
+  else
+    goto <bb 14>; [11.00%]
+
+  <bb 13> [local count: 118111600]:
+  # ivtmp.37_7 = PHI <ivtmp.37_124(3), ivtmp.37_8(12)>
+  # ivtmp.42_125 = PHI <ivtmp.42_119(3), ivtmp.42_131(12)>
+  if (n_39(D) > 0)
+    goto <bb 4>; [89.00%]
+  else
+    goto <bb 12>; [11.00%]
+
+  <bb 14> [local count: 14598063]:
+  return;
+
+}
+
+

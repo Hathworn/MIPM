@@ -1,0 +1,9 @@
+Searching for input Image at following location : /public/home/dtune/zhengh/amd_sdk/recursivegaussian/RecursiveGaussian_Input.bmp
+width = 512, height = 512Executing kernel for 1 iterations
+-------------------------------------------
+kernel_time (hipEventElapsedTime) = 1.384ms
+kernel_time (hipEventElapsedTime) = 0.072ms
+kernel_time (hipEventElapsedTime) = 0.534ms
+kernel_time (hipEventElapsedTime) = 0.027ms
+Passed!
+

@@ -1,0 +1,72 @@
+Min distance: 1.000000 arcmin
+Max distance: 10000.000000 arcmin
+Bins per dec: 5
+Total bins  : 20
+entering
+ 0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+IO        : 0.000027
+Kernel    : 0.000153
+Copy      : 1.646003
+Driver    : 0.000152
+Compute   : 0.001933
+CPU/Kernel Overlap: 0.000153
+Timer Wall Time: 1.648205

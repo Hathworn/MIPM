@@ -1,0 +1,6 @@
+[./concurrentkernels] - Starting...
+> Detected Compute Capability 9.0 hardware with 64 multi-processors
+Expected time for serial execution of 16 kernels = 0.160s
+Expected time for concurrent execution of 16 kernels = 0.010s
+Measured time for sample = 0.131s
+Test passed

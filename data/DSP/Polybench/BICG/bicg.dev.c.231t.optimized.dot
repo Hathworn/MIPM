@@ -1,0 +1,457 @@
+digraph "bicg.dev.c.231t.optimized" {
+overlap=false;
+subgraph "cluster_bicg_kernel1" {
+	style="dashed";
+	color="black";
+	label="bicg_kernel1 ()";
+	subgraph cluster_3_2 {
+	style="filled";
+	color="darkgreen";
+	fillcolor="grey88";
+	label="loop 2";
+	labeljust=l;
+	penwidth=2;
+	subgraph cluster_3_4 {
+	style="filled";
+	color="darkgreen";
+	fillcolor="grey77";
+	label="loop 4";
+	labeljust=l;
+	penwidth=2;
+	fn_3_basic_block_11 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:191126041\<bb\ 11\>:\l\
+|#\ ivtmp.24_69\ =\ PHI\ \<ivtmp.24_65(11),\ _133(14)\>\l\
+|_120\ =\ MEM[base:\ s_43(D),\ index:\ ivtmp.24_69,\ step:\ 4,\ offset:\ 0B];\l\
+|_121\ =\ MEM[base:\ _189,\ offset:\ 0B];\l\
+|_25\ =\ (float\ *)\ ivtmp.49_170;\l\
+|_126\ =\ MEM[base:\ _25,\ index:\ ivtmp.24_69,\ step:\ 4,\ offset:\ 0B];\l\
+|_128\ =\ .FMA\ (_121,\ _126,\ _120);\l\
+|MEM[base:\ s_43(D),\ index:\ ivtmp.24_69,\ step:\ 4,\ offset:\ 0B]\ =\ _128;\l\
+|ivtmp.24_65\ =\ ivtmp.24_69\ +\ 1;\l\
+|j_80\ =\ (int)\ ivtmp.24_65;\l\
+|if\ (end_j_40\ \>\ j_80)\l\
+\ \ goto\ \<bb\ 11\>;\ [89.00%]\l\
+else\l\
+\ \ goto\ \<bb\ 13\>;\ [11.00%]\l\
+}"];
+
+	}
+	subgraph cluster_3_3 {
+	style="filled";
+	color="darkgreen";
+	fillcolor="grey77";
+	label="loop 3";
+	labeljust=l;
+	penwidth=2;
+	fn_3_basic_block_6 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:504572759\<bb\ 6\>:\l\
+|#\ ivtmp.35_95\ =\ PHI\ \<0(5),\ ivtmp.35_96(6)\>\l\
+|vect__12.13_163\ =\ MEM[base:\ _67,\ index:\ ivtmp.35_95,\ offset:\ 0B];\l\
+|vect__22.16_173\ =\ MEM[base:\ _29,\ index:\ ivtmp.35_95,\ offset:\ 0B];\l\
+|vect__24.18_175\ =\ .FMA\ (vect_cst__165,\ vect__22.16_173,\ vect__12.13_163);\l\
+|MEM[base:\ _67,\ index:\ ivtmp.35_95,\ offset:\ 0B]\ =\ vect__24.18_175;\l\
+|ivtmp.35_96\ =\ ivtmp.35_95\ +\ 16;\l\
+|if\ (ivtmp.35_96\ !=\ _102)\l\
+\ \ goto\ \<bb\ 6\>;\ [83.33%]\l\
+else\l\
+\ \ goto\ \<bb\ 7\>;\ [16.67%]\l\
+}"];
+
+	}
+	fn_3_basic_block_14 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:105119324\<bb\ 14\>:\l\
+|#\ ivtmp.44_103\ =\ PHI\ \<ivtmp.44_111(4),\ ivtmp.44_105(13)\>\l\
+|#\ ivtmp.45_159\ =\ PHI\ \<ivtmp.45_158(4),\ _190(13)\>\l\
+|#\ ivtmp.48_167\ =\ PHI\ \<0(4),\ ivtmp.48_168(13)\>\l\
+|#\ ivtmp.49_170\ =\ PHI\ \<ivtmp.49_176(4),\ ivtmp.49_166(13)\>\l\
+|_17\ =\ (int)\ ivtmp.48_167;\l\
+|_77\ =\ _78\ +\ 4294967295;\l\
+|_76\ =\ _77\ \>\ 3;\l\
+|_58\ =\ ivtmp.44_103\ +\ 16;\l\
+|_82\ =\ (float\ *)\ _58;\l\
+|_66\ =\ _67\ \>=\ _82;\l\
+|_29\ =\ (float\ *)\ ivtmp.44_103;\l\
+|_28\ =\ _29\ \>=\ _53;\l\
+|_27\ =\ _28\ \|\ _66;\l\
+|_189\ =\ (float\ *)\ ivtmp.45_159;\l\
+|_104\ =\ _100\ \<=\ _189;\l\
+|_190\ =\ ivtmp.45_159\ +\ 4;\l\
+|_191\ =\ (float\ *)\ _190;\l\
+|_112\ =\ _67\ \>=\ _191;\l\
+|_113\ =\ _104\ \|\ _112;\l\
+|_13\ =\ _27\ &\ _113;\l\
+|_114\ =\ _13\ &\ _76;\l\
+|if\ (_114\ !=\ 0)\l\
+\ \ goto\ \<bb\ 5\>;\ [80.00%]\l\
+else\l\
+\ \ goto\ \<bb\ 11\>;\ [20.00%]\l\
+}"];
+
+	fn_3_basic_block_5 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:84095460\<bb\ 5\>:\l\
+|_164\ =\ MEM[base:\ _189,\ offset:\ 0B];\l\
+|vect_cst__165\ =\ \{_164,\ _164,\ _164,\ _164\};\l\
+}"];
+
+	fn_3_basic_block_13 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:105119325\<bb\ 13\>:\l\
+|ivtmp.44_105\ =\ ivtmp.44_103\ +\ _110;\l\
+|ivtmp.48_168\ =\ ivtmp.48_167\ +\ _169;\l\
+|ivtmp.49_166\ =\ _110\ +\ ivtmp.49_170;\l\
+|if\ (_190\ !=\ _198)\l\
+\ \ goto\ \<bb\ 14\>;\ [89.00%]\l\
+else\l\
+\ \ goto\ \<bb\ 15\>;\ [11.00%]\l\
+}"];
+
+	fn_3_basic_block_7 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:84095460\<bb\ 7\>:\l\
+|if\ (_78\ ==\ niters_vector_mult_vf.9_154)\l\
+\ \ goto\ \<bb\ 12\>;\ [25.00%]\l\
+else\l\
+\ \ goto\ \<bb\ 8\>;\ [75.00%]\l\
+}"];
+
+	fn_3_basic_block_8 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:63071595\<bb\ 8\>:\l\
+|_16\ =\ *_12;\l\
+|_18\ =\ MEM[base:\ _189,\ offset:\ 0B];\l\
+|_19\ =\ _17\ +\ tmp.10_155;\l\
+|_21\ =\ _19\ w*\ 4;\l\
+|_22\ =\ A_45(D)\ +\ _21;\l\
+|_23\ =\ *_22;\l\
+|_47\ =\ .FMA\ (_18,\ _23,\ _16);\l\
+|*_12\ =\ _47;\l\
+|if\ (end_j_40\ \>\ j_135)\l\
+\ \ goto\ \<bb\ 9\>;\ [89.00%]\l\
+else\l\
+\ \ goto\ \<bb\ 12\>;\ [11.00%]\l\
+}"];
+
+	fn_3_basic_block_12 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:84095460\<bb\ 12\>:\l\
+}"];
+
+	fn_3_basic_block_9 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:56133722\<bb\ 9\>:\l\
+|_48\ =\ *_46;\l\
+|_8\ =\ MEM[base:\ _189,\ offset:\ 0B];\l\
+|_7\ =\ _17\ +\ j_135;\l\
+|_56\ =\ _7\ w*\ 4;\l\
+|_59\ =\ A_45(D)\ +\ _56;\l\
+|_184\ =\ *_59;\l\
+|_186\ =\ .FMA\ (_8,\ _184,\ _48);\l\
+|*_46\ =\ _186;\l\
+|if\ (end_j_40\ \>\ j_188)\l\
+\ \ goto\ \<bb\ 10\>;\ [89.00%]\l\
+else\l\
+\ \ goto\ \<bb\ 12\>;\ [11.00%]\l\
+}"];
+
+	fn_3_basic_block_10 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:49959011\<bb\ 10\>:\l\
+|_141\ =\ *_140;\l\
+|_142\ =\ MEM[base:\ _189,\ offset:\ 0B];\l\
+|_143\ =\ _17\ +\ j_188;\l\
+|_145\ =\ _143\ w*\ 4;\l\
+|_146\ =\ A_45(D)\ +\ _145;\l\
+|_147\ =\ *_146;\l\
+|_149\ =\ .FMA\ (_142,\ _147,\ _141);\l\
+|*_140\ =\ _149;\l\
+goto\ \<bb\ 12\>;\ [100.00%]\l\
+}"];
+
+	}
+	fn_3_basic_block_0 [shape=Mdiamond,style=filled,fillcolor=white,label="ENTRY"];
+
+	fn_3_basic_block_1 [shape=Mdiamond,style=filled,fillcolor=white,label="EXIT"];
+
+	fn_3_basic_block_2 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:14598062\<bb\ 2\>:\l\
+|thread_id_33\ =\ get_thread_id\ ();\l\
+|num_threads_35\ =\ get_group_size\ ();\l\
+|items_per_thread_37\ =\ ny_36(D)\ /\ num_threads_35;\l\
+|remainder_38\ =\ ny_36(D)\ %\ num_threads_35;\l\
+|_1\ =\ thread_id_33\ *\ items_per_thread_37;\l\
+|_2\ =\ MIN_EXPR\ \<thread_id_33,\ remainder_38\>;\l\
+|start_j_39\ =\ _1\ +\ _2;\l\
+|_3\ =\ items_per_thread_37\ +\ start_j_39;\l\
+|_4\ =\ thread_id_33\ \<\ remainder_38;\l\
+|_5\ =\ (int)\ _4;\l\
+|end_j_40\ =\ _3\ +\ _5;\l\
+|if\ (start_j_39\ \<\ end_j_40)\l\
+\ \ goto\ \<bb\ 3\>;\ [89.00%]\l\
+else\l\
+\ \ goto\ \<bb\ 15\>;\ [11.00%]\l\
+}"];
+
+	fn_3_basic_block_3 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:12992275\<bb\ 3\>:\l\
+|_63\ =\ (unsigned\ int)\ end_j_40;\l\
+|_94\ =\ (unsigned\ int)\ start_j_39;\l\
+|_15\ =\ ~_94;\l\
+|_62\ =\ _15\ +\ _63;\l\
+|_91\ =\ (sizetype)\ _62;\l\
+|_90\ =\ _91\ +\ 1;\l\
+|_89\ =\ _90\ *\ 4;\l\
+|_87\ =\ start_j_39\ w*\ 4;\l\
+|_86\ =\ s_43(D)\ +\ _87;\l\
+|__builtin_memset\ (_86,\ 0,\ _89);\l\
+|if\ (nx_41(D)\ \>\ 0)\l\
+\ \ goto\ \<bb\ 4\>;\ [100.00%]\l\
+else\l\
+\ \ goto\ \<bb\ 15\>;\ [0.00%]\l\
+}"];
+
+	fn_3_basic_block_4 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:11563125\<bb\ 4\>:\l\
+|_110\ =\ ny_36(D)\ w*\ 4;\l\
+|_133\ =\ (sizetype)\ start_j_39;\l\
+|_134\ =\ start_j_39\ w*\ 4;\l\
+|_132\ =\ A_45(D)\ +\ _134;\l\
+|ivtmp.44_111\ =\ (unsigned\ long)\ _132;\l\
+|ivtmp.45_158\ =\ (unsigned\ long)\ r_44(D);\l\
+|_169\ =\ (unsigned\ int)\ ny_36(D);\l\
+|ivtmp.49_176\ =\ (unsigned\ long)\ A_45(D);\l\
+|_192\ =\ (unsigned\ int)\ nx_41(D);\l\
+|_193\ =\ _192\ +\ 4294967295;\l\
+|_14\ =\ ivtmp.45_158\ +\ 4;\l\
+|_198\ =\ WIDEN_MULT_PLUS_EXPR\ \<_193,\ 4,\ _14\>;\l\
+|_81\ =\ (unsigned\ int)\ end_j_40;\l\
+|_79\ =\ (unsigned\ int)\ start_j_39;\l\
+|_78\ =\ _81\ -\ _79;\l\
+|_67\ =\ s_43(D)\ +\ _134;\l\
+|_54\ =\ _134\ +\ 16;\l\
+|_53\ =\ s_43(D)\ +\ _54;\l\
+|_97\ =\ (sizetype)\ _78;\l\
+|_98\ =\ _97\ +\ _133;\l\
+|_99\ =\ _98\ *\ 4;\l\
+|_100\ =\ s_43(D)\ +\ _99;\l\
+|bnd.8_153\ =\ _78\ \>\>\ 2;\l\
+|_102\ =\ bnd.8_153\ w*\ 16;\l\
+|niters_vector_mult_vf.9_154\ =\ _78\ &\ 4294967292;\l\
+|_73\ =\ _79\ +\ niters_vector_mult_vf.9_154;\l\
+|tmp.10_155\ =\ (int)\ _73;\l\
+|_11\ =\ tmp.10_155\ w*\ 4;\l\
+|_12\ =\ s_43(D)\ +\ _11;\l\
+|_72\ =\ _73\ +\ 1;\l\
+|j_135\ =\ (int)\ _72;\l\
+|_49\ =\ j_135\ w*\ 4;\l\
+|_46\ =\ s_43(D)\ +\ _49;\l\
+|_51\ =\ _73\ +\ 2;\l\
+|j_188\ =\ (int)\ _51;\l\
+|_139\ =\ j_188\ w*\ 4;\l\
+|_140\ =\ s_43(D)\ +\ _139;\l\
+goto\ \<bb\ 14\>;\ [100.00%]\l\
+}"];
+
+	fn_3_basic_block_15 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:14598063\<bb\ 15\>:\l\
+|return;\l\
+}"];
+
+	fn_3_basic_block_0:s -> fn_3_basic_block_2:n [style="solid,bold",color=blue,weight=100,constraint=true,label="[100%]"];
+	fn_3_basic_block_2:s -> fn_3_basic_block_3:n [style="solid,bold",color=black,weight=10,constraint=true,label="[89%]"];
+	fn_3_basic_block_2:s -> fn_3_basic_block_15:n [style="solid,bold",color=black,weight=10,constraint=true,label="[11%]"];
+	fn_3_basic_block_3:s -> fn_3_basic_block_4:n [style="solid,bold",color=black,weight=10,constraint=true,label="[100%]"];
+	fn_3_basic_block_3:s -> fn_3_basic_block_15:n [style="solid,bold",color=black,weight=10,constraint=true,label="[0%]"];
+	fn_3_basic_block_4:s -> fn_3_basic_block_14:n [style="solid,bold",color=blue,weight=100,constraint=true,label="[100%]"];
+	fn_3_basic_block_5:s -> fn_3_basic_block_6:n [style="solid,bold",color=blue,weight=100,constraint=true,label="[100%]"];
+	fn_3_basic_block_6:s -> fn_3_basic_block_6:n [style="dotted,bold",color=blue,weight=10,constraint=false,label="[83%]"];
+	fn_3_basic_block_6:s -> fn_3_basic_block_7:n [style="solid,bold",color=black,weight=10,constraint=true,label="[16%]"];
+	fn_3_basic_block_7:s -> fn_3_basic_block_8:n [style="solid,bold",color=black,weight=10,constraint=true,label="[75%]"];
+	fn_3_basic_block_7:s -> fn_3_basic_block_12:n [style="solid,bold",color=black,weight=10,constraint=true,label="[25%]"];
+	fn_3_basic_block_8:s -> fn_3_basic_block_9:n [style="solid,bold",color=black,weight=10,constraint=true,label="[89%]"];
+	fn_3_basic_block_8:s -> fn_3_basic_block_12:n [style="solid,bold",color=black,weight=10,constraint=true,label="[11%]"];
+	fn_3_basic_block_9:s -> fn_3_basic_block_10:n [style="solid,bold",color=black,weight=10,constraint=true,label="[89%]"];
+	fn_3_basic_block_9:s -> fn_3_basic_block_12:n [style="solid,bold",color=black,weight=10,constraint=true,label="[11%]"];
+	fn_3_basic_block_10:s -> fn_3_basic_block_12:n [style="solid,bold",color=blue,weight=100,constraint=true,label="[100%]"];
+	fn_3_basic_block_11:s -> fn_3_basic_block_11:n [style="dotted,bold",color=blue,weight=10,constraint=false,label="[89%]"];
+	fn_3_basic_block_11:s -> fn_3_basic_block_13:n [style="solid,bold",color=black,weight=10,constraint=true,label="[11%]"];
+	fn_3_basic_block_12:s -> fn_3_basic_block_13:n [style="solid,bold",color=blue,weight=100,constraint=true,label="[100%]"];
+	fn_3_basic_block_13:s -> fn_3_basic_block_14:n [style="dotted,bold",color=blue,weight=10,constraint=false,label="[89%]"];
+	fn_3_basic_block_13:s -> fn_3_basic_block_15:n [style="solid,bold",color=black,weight=10,constraint=true,label="[11%]"];
+	fn_3_basic_block_14:s -> fn_3_basic_block_11:n [style="solid,bold",color=black,weight=10,constraint=true,label="[20%]"];
+	fn_3_basic_block_14:s -> fn_3_basic_block_5:n [style="solid,bold",color=black,weight=10,constraint=true,label="[80%]"];
+	fn_3_basic_block_15:s -> fn_3_basic_block_1:n [style="solid,bold",color=black,weight=10,constraint=true,label="[100%]"];
+	fn_3_basic_block_0:s -> fn_3_basic_block_1:n [style="invis",constraint=true];
+}
+subgraph "cluster_bicg_kernel2" {
+	style="dashed";
+	color="black";
+	label="bicg_kernel2 ()";
+	subgraph cluster_4_1 {
+	style="filled";
+	color="darkgreen";
+	fillcolor="grey88";
+	label="loop 1";
+	labeljust=l;
+	penwidth=2;
+	subgraph cluster_4_2 {
+	style="filled";
+	color="darkgreen";
+	fillcolor="grey77";
+	label="loop 2";
+	labeljust=l;
+	penwidth=2;
+	fn_4_basic_block_7 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:567644349\<bb\ 7\>:\l\
+|#\ tmp_48\ =\ PHI\ \<0.0(6),\ tmp_42(7)\>\l\
+|#\ ivtmp.73_57\ =\ PHI\ \<0(6),\ ivtmp.73_50(7)\>\l\
+|vect__15.63_72\ =\ MEM[base:\ vectp.62_24,\ index:\ ivtmp.73_57,\ offset:\ 0B];\l\
+|vect__19.66_71\ =\ MEM[base:\ p_41(D),\ index:\ ivtmp.73_57,\ offset:\ 0B];\l\
+|vect__20.67_68\ =\ vect__19.66_71\ *\ vect__15.63_72;\l\
+|stmp_tmp_42.68_84\ =\ BIT_FIELD_REF\ \<vect__20.67_68,\ 32,\ 0\>;\l\
+|stmp_tmp_42.68_85\ =\ tmp_48\ +\ stmp_tmp_42.68_84;\l\
+|stmp_tmp_42.68_86\ =\ BIT_FIELD_REF\ \<vect__20.67_68,\ 32,\ 32\>;\l\
+|stmp_tmp_42.68_87\ =\ stmp_tmp_42.68_85\ +\ stmp_tmp_42.68_86;\l\
+|stmp_tmp_42.68_88\ =\ BIT_FIELD_REF\ \<vect__20.67_68,\ 32,\ 64\>;\l\
+|stmp_tmp_42.68_89\ =\ stmp_tmp_42.68_87\ +\ stmp_tmp_42.68_88;\l\
+|stmp_tmp_42.68_90\ =\ BIT_FIELD_REF\ \<vect__20.67_68,\ 32,\ 96\>;\l\
+|tmp_42\ =\ stmp_tmp_42.68_89\ +\ stmp_tmp_42.68_90;\l\
+|ivtmp.73_50\ =\ ivtmp.73_57\ +\ 16;\l\
+|if\ (ivtmp.73_50\ !=\ _80)\l\
+\ \ goto\ \<bb\ 7\>;\ [83.33%]\l\
+else\l\
+\ \ goto\ \<bb\ 8\>;\ [16.67%]\l\
+}"];
+
+	}
+	fn_4_basic_block_4 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:118111600\<bb\ 4\>:\l\
+|#\ ivtmp.81_81\ =\ PHI\ \<ivtmp.81_76(3),\ ivtmp.81_77(13)\>\l\
+|MEM[base:\ q_35(D),\ index:\ ivtmp.81_81,\ step:\ 4,\ offset:\ 0B]\ =\ 0.0;\l\
+|if\ (ny_37(D)\ \>\ 0)\l\
+\ \ goto\ \<bb\ 5\>;\ [89.00%]\l\
+else\l\
+\ \ goto\ \<bb\ 13\>;\ [11.00%]\l\
+}"];
+
+	fn_4_basic_block_5 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:105119324\<bb\ 5\>:\l\
+|_106\ =\ (unsigned\ int)\ ivtmp.81_81;\l\
+|_107\ =\ _106\ *\ 8192;\l\
+|_10\ =\ (int)\ _107;\l\
+|if\ (_56\ \<=\ 2)\l\
+\ \ goto\ \<bb\ 9\>;\ [10.00%]\l\
+else\l\
+\ \ goto\ \<bb\ 6\>;\ [90.00%]\l\
+}"];
+
+	fn_4_basic_block_13 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:118111601\<bb\ 13\>:\l\
+|#\ tmp_49\ =\ PHI\ \<tmp_44(12),\ 0.0(4)\>\l\
+|MEM[base:\ q_35(D),\ index:\ ivtmp.81_81,\ step:\ 4,\ offset:\ 0B]\ =\ tmp_49;\l\
+|ivtmp.81_77\ =\ ivtmp.81_81\ +\ 1;\l\
+|i_105\ =\ (int)\ ivtmp.81_77;\l\
+|if\ (end_i_34\ \>\ i_105)\l\
+\ \ goto\ \<bb\ 4\>;\ [89.00%]\l\
+else\l\
+\ \ goto\ \<bb\ 14\>;\ [11.00%]\l\
+}"];
+
+	fn_4_basic_block_6 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:94607391\<bb\ 6\>:\l\
+|_22\ =\ _10\ w*\ 4;\l\
+|vectp.62_24\ =\ A_40(D)\ +\ _22;\l\
+}"];
+
+	fn_4_basic_block_9 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:81467476\<bb\ 9\>:\l\
+|#\ tmp_55\ =\ PHI\ \<0.0(5),\ tmp_42(8)\>\l\
+|#\ j_54\ =\ PHI\ \<0(5),\ tmp.60_45(8)\>\l\
+|_12\ =\ _10\ +\ j_54;\l\
+|_14\ =\ _12\ w*\ 4;\l\
+|_15\ =\ A_40(D)\ +\ _14;\l\
+|_16\ =\ *_15;\l\
+|_18\ =\ j_54\ w*\ 4;\l\
+|_19\ =\ p_41(D)\ +\ _18;\l\
+|_20\ =\ *_19;\l\
+|tmp_52\ =\ .FMA\ (_16,\ _20,\ tmp_55);\l\
+|j_79\ =\ j_54\ +\ 1;\l\
+|if\ (ny_37(D)\ \>\ j_79)\l\
+\ \ goto\ \<bb\ 10\>;\ [89.00%]\l\
+else\l\
+\ \ goto\ \<bb\ 12\>;\ [11.00%]\l\
+}"];
+
+	fn_4_basic_block_10 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:72506056\<bb\ 10\>:\l\
+|_82\ =\ _10\ +\ j_79;\l\
+|_95\ =\ _82\ w*\ 4;\l\
+|_96\ =\ A_40(D)\ +\ _95;\l\
+|_97\ =\ *_96;\l\
+|_99\ =\ _18\ +\ 4;\l\
+|_100\ =\ p_41(D)\ +\ _99;\l\
+|_101\ =\ *_100;\l\
+|tmp_103\ =\ .FMA\ (_97,\ _101,\ tmp_52);\l\
+|j_104\ =\ j_54\ +\ 2;\l\
+|if\ (ny_37(D)\ \>\ j_104)\l\
+\ \ goto\ \<bb\ 11\>;\ [89.00%]\l\
+else\l\
+\ \ goto\ \<bb\ 12\>;\ [11.00%]\l\
+}"];
+
+	fn_4_basic_block_12 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:105119324\<bb\ 12\>:\l\
+|#\ tmp_44\ =\ PHI\ \<tmp_60(11),\ tmp_52(9),\ tmp_42(8),\ tmp_103(10)\>\l\
+}"];
+
+	fn_4_basic_block_8 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:94607391\<bb\ 8\>:\l\
+|if\ (niters_vector_mult_vf.59_46\ ==\ niters.57_78)\l\
+\ \ goto\ \<bb\ 12\>;\ [25.00%]\l\
+else\l\
+\ \ goto\ \<bb\ 9\>;\ [75.00%]\l\
+}"];
+
+	fn_4_basic_block_11 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:64530389\<bb\ 11\>:\l\
+|_75\ =\ _10\ +\ j_104;\l\
+|_73\ =\ _75\ w*\ 4;\l\
+|_67\ =\ A_40(D)\ +\ _73;\l\
+|_66\ =\ *_67;\l\
+|_64\ =\ _18\ +\ 8;\l\
+|_63\ =\ p_41(D)\ +\ _64;\l\
+|_62\ =\ *_63;\l\
+|tmp_60\ =\ .FMA\ (_62,\ _66,\ tmp_103);\l\
+}"];
+
+	}
+	fn_4_basic_block_0 [shape=Mdiamond,style=filled,fillcolor=white,label="ENTRY"];
+
+	fn_4_basic_block_1 [shape=Mdiamond,style=filled,fillcolor=white,label="EXIT"];
+
+	fn_4_basic_block_2 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:14598062\<bb\ 2\>:\l\
+|thread_id_27\ =\ get_thread_id\ ();\l\
+|num_threads_29\ =\ get_group_size\ ();\l\
+|items_per_thread_31\ =\ nx_30(D)\ /\ num_threads_29;\l\
+|remainder_32\ =\ nx_30(D)\ %\ num_threads_29;\l\
+|_1\ =\ thread_id_27\ *\ items_per_thread_31;\l\
+|_2\ =\ MIN_EXPR\ \<thread_id_27,\ remainder_32\>;\l\
+|start_i_33\ =\ _1\ +\ _2;\l\
+|_3\ =\ items_per_thread_31\ +\ start_i_33;\l\
+|_4\ =\ thread_id_27\ \<\ remainder_32;\l\
+|_5\ =\ (int)\ _4;\l\
+|end_i_34\ =\ _3\ +\ _5;\l\
+|if\ (start_i_33\ \<\ end_i_34)\l\
+\ \ goto\ \<bb\ 3\>;\ [89.00%]\l\
+else\l\
+\ \ goto\ \<bb\ 14\>;\ [11.00%]\l\
+}"];
+
+	fn_4_basic_block_3 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:12992275\<bb\ 3\>:\l\
+|ivtmp.81_76\ =\ (sizetype)\ start_i_33;\l\
+|niters.57_78\ =\ (unsigned\ int)\ ny_37(D);\l\
+|_56\ =\ niters.57_78\ +\ 4294967295;\l\
+|bnd.58_53\ =\ niters.57_78\ \>\>\ 2;\l\
+|_80\ =\ bnd.58_53\ w*\ 16;\l\
+|niters_vector_mult_vf.59_46\ =\ niters.57_78\ &\ 4294967292;\l\
+|tmp.60_45\ =\ (int)\ niters_vector_mult_vf.59_46;\l\
+}"];
+
+	fn_4_basic_block_14 [shape=record,style=filled,fillcolor=lightgrey,label="{COUNT:14598063\<bb\ 14\>:\l\
+|return;\l\
+}"];
+
+	fn_4_basic_block_0:s -> fn_4_basic_block_2:n [style="solid,bold",color=blue,weight=100,constraint=true,label="[100%]"];
+	fn_4_basic_block_2:s -> fn_4_basic_block_3:n [style="solid,bold",color=black,weight=10,constraint=true,label="[89%]"];
+	fn_4_basic_block_2:s -> fn_4_basic_block_14:n [style="solid,bold",color=black,weight=10,constraint=true,label="[11%]"];
+	fn_4_basic_block_3:s -> fn_4_basic_block_4:n [style="solid,bold",color=blue,weight=100,constraint=true,label="[100%]"];
+	fn_4_basic_block_4:s -> fn_4_basic_block_5:n [style="solid,bold",color=black,weight=10,constraint=true,label="[89%]"];
+	fn_4_basic_block_4:s -> fn_4_basic_block_13:n [style="solid,bold",color=black,weight=10,constraint=true,label="[11%]"];
+	fn_4_basic_block_5:s -> fn_4_basic_block_6:n [style="solid,bold",color=black,weight=10,constraint=true,label="[90%]"];
+	fn_4_basic_block_5:s -> fn_4_basic_block_9:n [style="solid,bold",color=black,weight=10,constraint=true,label="[10%]"];
+	fn_4_basic_block_6:s -> fn_4_basic_block_7:n [style="solid,bold",color=blue,weight=100,constraint=true,label="[100%]"];
+	fn_4_basic_block_7:s -> fn_4_basic_block_7:n [style="dotted,bold",color=blue,weight=10,constraint=false,label="[83%]"];
+	fn_4_basic_block_7:s -> fn_4_basic_block_8:n [style="solid,bold",color=black,weight=10,constraint=true,label="[16%]"];
+	fn_4_basic_block_8:s -> fn_4_basic_block_9:n [style="solid,bold",color=black,weight=10,constraint=true,label="[75%]"];
+	fn_4_basic_block_8:s -> fn_4_basic_block_12:n [style="solid,bold",color=black,weight=10,constraint=true,label="[25%]"];
+	fn_4_basic_block_9:s -> fn_4_basic_block_10:n [style="solid,bold",color=black,weight=10,constraint=true,label="[89%]"];
+	fn_4_basic_block_9:s -> fn_4_basic_block_12:n [style="solid,bold",color=black,weight=10,constraint=true,label="[11%]"];
+	fn_4_basic_block_10:s -> fn_4_basic_block_11:n [style="solid,bold",color=black,weight=10,constraint=true,label="[89%]"];
+	fn_4_basic_block_10:s -> fn_4_basic_block_12:n [style="solid,bold",color=black,weight=10,constraint=true,label="[11%]"];
+	fn_4_basic_block_11:s -> fn_4_basic_block_12:n [style="solid,bold",color=blue,weight=100,constraint=true,label="[100%]"];
+	fn_4_basic_block_12:s -> fn_4_basic_block_13:n [style="solid,bold",color=blue,weight=100,constraint=true,label="[100%]"];
+	fn_4_basic_block_13:s -> fn_4_basic_block_4:n [style="dotted,bold",color=blue,weight=10,constraint=false,label="[89%]"];
+	fn_4_basic_block_13:s -> fn_4_basic_block_14:n [style="solid,bold",color=black,weight=10,constraint=true,label="[11%]"];
+	fn_4_basic_block_14:s -> fn_4_basic_block_1:n [style="solid,bold",color=black,weight=10,constraint=true,label="[100%]"];
+	fn_4_basic_block_0:s -> fn_4_basic_block_1:n [style="invis",constraint=true];
+}
+}

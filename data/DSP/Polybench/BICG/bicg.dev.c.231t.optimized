@@ -1,0 +1,521 @@
+
+;; Function bicg_kernel1 (bicg_kernel1, funcdef_no=3, decl_uid=4491, cgraph_uid=4, symbol_order=10)
+
+Removing basic block 16
+Removing basic block 17
+Removing basic block 18
+Removing basic block 19
+Removing basic block 20
+Removing basic block 21
+Removing basic block 22
+Removing basic block 23
+Removing basic block 24
+Removing basic block 25
+Removing basic block 26
+__attribute__((section (".global")))
+bicg_kernel1 (int nx, int ny, float * A, float * r, float * s)
+{
+  unsigned long ivtmp.49;
+  unsigned int ivtmp.48;
+  unsigned long ivtmp.45;
+  unsigned long ivtmp.44;
+  sizetype ivtmp.35;
+  sizetype ivtmp.24;
+  vector(4) float vect__24.18;
+  vector(4) float vect__22.16;
+  vector(4) float vect__12.13;
+  int tmp.10;
+  unsigned int niters_vector_mult_vf.9;
+  unsigned int bnd.8;
+  int j;
+  int end_j;
+  int start_j;
+  int remainder;
+  int items_per_thread;
+  int num_threads;
+  int thread_id;
+  int _1;
+  int _2;
+  int _3;
+  _Bool _4;
+  int _5;
+  int _7;
+  float _8;
+  long unsigned int _11;
+  float * _12;
+  _Bool _13;
+  unsigned long _14;
+  unsigned int _15;
+  float _16;
+  int _17;
+  float _18;
+  int _19;
+  long unsigned int _21;
+  float * _22;
+  float _23;
+  float * _25;
+  _Bool _27;
+  _Bool _28;
+  float * _29;
+  float * _46;
+  float _47;
+  float _48;
+  long unsigned int _49;
+  unsigned int _51;
+  float * _53;
+  sizetype _54;
+  long unsigned int _56;
+  unsigned long _58;
+  float * _59;
+  unsigned int _62;
+  unsigned int _63;
+  _Bool _66;
+  float * _67;
+  unsigned int _72;
+  unsigned int _73;
+  _Bool _76;
+  unsigned int _77;
+  unsigned int _78;
+  unsigned int _79;
+  unsigned int _81;
+  float * _82;
+  float * _86;
+  long unsigned int _87;
+  sizetype _89;
+  sizetype _90;
+  sizetype _91;
+  unsigned int _94;
+  sizetype _97;
+  sizetype _98;
+  sizetype _99;
+  float * _100;
+  sizetype _102;
+  _Bool _104;
+  sizetype _110;
+  _Bool _112;
+  _Bool _113;
+  _Bool _114;
+  float _120;
+  float _121;
+  float _126;
+  float _128;
+  float * _132;
+  sizetype _133;
+  sizetype _134;
+  long unsigned int _139;
+  float * _140;
+  float _141;
+  float _142;
+  int _143;
+  long unsigned int _145;
+  float * _146;
+  float _147;
+  float _149;
+  float _164;
+  vector(4) float vect_cst__165;
+  unsigned int _169;
+  float _184;
+  float _186;
+  float * _189;
+  unsigned long _190;
+  float * _191;
+  unsigned int _192;
+  unsigned int _193;
+  unsigned long _198;
+
+  <bb 2> [local count: 14598062]:
+  thread_id_33 = get_thread_id ();
+  num_threads_35 = get_group_size ();
+  items_per_thread_37 = ny_36(D) / num_threads_35;
+  remainder_38 = ny_36(D) % num_threads_35;
+  _1 = thread_id_33 * items_per_thread_37;
+  _2 = MIN_EXPR <thread_id_33, remainder_38>;
+  start_j_39 = _1 + _2;
+  _3 = items_per_thread_37 + start_j_39;
+  _4 = thread_id_33 < remainder_38;
+  _5 = (int) _4;
+  end_j_40 = _3 + _5;
+  if (start_j_39 < end_j_40)
+    goto <bb 3>; [89.00%]
+  else
+    goto <bb 15>; [11.00%]
+
+  <bb 3> [local count: 12992275]:
+  _63 = (unsigned int) end_j_40;
+  _94 = (unsigned int) start_j_39;
+  _15 = ~_94;
+  _62 = _15 + _63;
+  _91 = (sizetype) _62;
+  _90 = _91 + 1;
+  _89 = _90 * 4;
+  _87 = start_j_39 w* 4;
+  _86 = s_43(D) + _87;
+  __builtin_memset (_86, 0, _89);
+  if (nx_41(D) > 0)
+    goto <bb 4>; [100.00%]
+  else
+    goto <bb 15>; [0.00%]
+
+  <bb 4> [local count: 11563125]:
+  _110 = ny_36(D) w* 4;
+  _133 = (sizetype) start_j_39;
+  _134 = start_j_39 w* 4;
+  _132 = A_45(D) + _134;
+  ivtmp.44_111 = (unsigned long) _132;
+  ivtmp.45_158 = (unsigned long) r_44(D);
+  _169 = (unsigned int) ny_36(D);
+  ivtmp.49_176 = (unsigned long) A_45(D);
+  _192 = (unsigned int) nx_41(D);
+  _193 = _192 + 4294967295;
+  _14 = ivtmp.45_158 + 4;
+  _198 = WIDEN_MULT_PLUS_EXPR <_193, 4, _14>;
+  _81 = (unsigned int) end_j_40;
+  _79 = (unsigned int) start_j_39;
+  _78 = _81 - _79;
+  _67 = s_43(D) + _134;
+  _54 = _134 + 16;
+  _53 = s_43(D) + _54;
+  _97 = (sizetype) _78;
+  _98 = _97 + _133;
+  _99 = _98 * 4;
+  _100 = s_43(D) + _99;
+  bnd.8_153 = _78 >> 2;
+  _102 = bnd.8_153 w* 16;
+  niters_vector_mult_vf.9_154 = _78 & 4294967292;
+  _73 = _79 + niters_vector_mult_vf.9_154;
+  tmp.10_155 = (int) _73;
+  _11 = tmp.10_155 w* 4;
+  _12 = s_43(D) + _11;
+  _72 = _73 + 1;
+  j_135 = (int) _72;
+  _49 = j_135 w* 4;
+  _46 = s_43(D) + _49;
+  _51 = _73 + 2;
+  j_188 = (int) _51;
+  _139 = j_188 w* 4;
+  _140 = s_43(D) + _139;
+  goto <bb 14>; [100.00%]
+
+  <bb 5> [local count: 84095460]:
+  _164 = MEM[base: _189, offset: 0B];
+  vect_cst__165 = {_164, _164, _164, _164};
+
+  <bb 6> [local count: 504572759]:
+  # ivtmp.35_95 = PHI <0(5), ivtmp.35_96(6)>
+  vect__12.13_163 = MEM[base: _67, index: ivtmp.35_95, offset: 0B];
+  vect__22.16_173 = MEM[base: _29, index: ivtmp.35_95, offset: 0B];
+  vect__24.18_175 = .FMA (vect_cst__165, vect__22.16_173, vect__12.13_163);
+  MEM[base: _67, index: ivtmp.35_95, offset: 0B] = vect__24.18_175;
+  ivtmp.35_96 = ivtmp.35_95 + 16;
+  if (ivtmp.35_96 != _102)
+    goto <bb 6>; [83.33%]
+  else
+    goto <bb 7>; [16.67%]
+
+  <bb 7> [local count: 84095460]:
+  if (_78 == niters_vector_mult_vf.9_154)
+    goto <bb 12>; [25.00%]
+  else
+    goto <bb 8>; [75.00%]
+
+  <bb 8> [local count: 63071595]:
+  _16 = *_12;
+  _18 = MEM[base: _189, offset: 0B];
+  _19 = _17 + tmp.10_155;
+  _21 = _19 w* 4;
+  _22 = A_45(D) + _21;
+  _23 = *_22;
+  _47 = .FMA (_18, _23, _16);
+  *_12 = _47;
+  if (end_j_40 > j_135)
+    goto <bb 9>; [89.00%]
+  else
+    goto <bb 12>; [11.00%]
+
+  <bb 9> [local count: 56133722]:
+  _48 = *_46;
+  _8 = MEM[base: _189, offset: 0B];
+  _7 = _17 + j_135;
+  _56 = _7 w* 4;
+  _59 = A_45(D) + _56;
+  _184 = *_59;
+  _186 = .FMA (_8, _184, _48);
+  *_46 = _186;
+  if (end_j_40 > j_188)
+    goto <bb 10>; [89.00%]
+  else
+    goto <bb 12>; [11.00%]
+
+  <bb 10> [local count: 49959011]:
+  _141 = *_140;
+  _142 = MEM[base: _189, offset: 0B];
+  _143 = _17 + j_188;
+  _145 = _143 w* 4;
+  _146 = A_45(D) + _145;
+  _147 = *_146;
+  _149 = .FMA (_142, _147, _141);
+  *_140 = _149;
+  goto <bb 12>; [100.00%]
+
+  <bb 11> [local count: 191126041]:
+  # ivtmp.24_69 = PHI <ivtmp.24_65(11), _133(14)>
+  _120 = MEM[base: s_43(D), index: ivtmp.24_69, step: 4, offset: 0B];
+  _121 = MEM[base: _189, offset: 0B];
+  _25 = (float *) ivtmp.49_170;
+  _126 = MEM[base: _25, index: ivtmp.24_69, step: 4, offset: 0B];
+  _128 = .FMA (_121, _126, _120);
+  MEM[base: s_43(D), index: ivtmp.24_69, step: 4, offset: 0B] = _128;
+  ivtmp.24_65 = ivtmp.24_69 + 1;
+  j_80 = (int) ivtmp.24_65;
+  if (end_j_40 > j_80)
+    goto <bb 11>; [89.00%]
+  else
+    goto <bb 13>; [11.00%]
+
+  <bb 12> [local count: 84095460]:
+
+  <bb 13> [local count: 105119325]:
+  ivtmp.44_105 = ivtmp.44_103 + _110;
+  ivtmp.48_168 = ivtmp.48_167 + _169;
+  ivtmp.49_166 = _110 + ivtmp.49_170;
+  if (_190 != _198)
+    goto <bb 14>; [89.00%]
+  else
+    goto <bb 15>; [11.00%]
+
+  <bb 14> [local count: 105119324]:
+  # ivtmp.44_103 = PHI <ivtmp.44_111(4), ivtmp.44_105(13)>
+  # ivtmp.45_159 = PHI <ivtmp.45_158(4), _190(13)>
+  # ivtmp.48_167 = PHI <0(4), ivtmp.48_168(13)>
+  # ivtmp.49_170 = PHI <ivtmp.49_176(4), ivtmp.49_166(13)>
+  _17 = (int) ivtmp.48_167;
+  _77 = _78 + 4294967295;
+  _76 = _77 > 3;
+  _58 = ivtmp.44_103 + 16;
+  _82 = (float *) _58;
+  _66 = _67 >= _82;
+  _29 = (float *) ivtmp.44_103;
+  _28 = _29 >= _53;
+  _27 = _28 | _66;
+  _189 = (float *) ivtmp.45_159;
+  _104 = _100 <= _189;
+  _190 = ivtmp.45_159 + 4;
+  _191 = (float *) _190;
+  _112 = _67 >= _191;
+  _113 = _104 | _112;
+  _13 = _27 & _113;
+  _114 = _13 & _76;
+  if (_114 != 0)
+    goto <bb 5>; [80.00%]
+  else
+    goto <bb 11>; [20.00%]
+
+  <bb 15> [local count: 14598063]:
+  return;
+
+}
+
+
+
+;; Function bicg_kernel2 (bicg_kernel2, funcdef_no=4, decl_uid=4516, cgraph_uid=5, symbol_order=11)
+
+Removing basic block 15
+Removing basic block 16
+Removing basic block 17
+Removing basic block 18
+Removing basic block 19
+Removing basic block 20
+Removing basic block 21
+Removing basic block 22
+Removing basic block 23
+Removing basic block 24
+__attribute__((section (".global")))
+bicg_kernel2 (int nx, int ny, float * A, float * p, float * q)
+{
+  sizetype ivtmp.81;
+  sizetype ivtmp.73;
+  float stmp_tmp_42.68;
+  vector(4) float vect__20.67;
+  vector(4) float vect__19.66;
+  vector(4) float vect__15.63;
+  vector(4) float * vectp.62;
+  int tmp.60;
+  unsigned int niters_vector_mult_vf.59;
+  unsigned int bnd.58;
+  unsigned int niters.57;
+  int j;
+  float tmp;
+  int i;
+  int end_i;
+  int start_i;
+  int remainder;
+  int items_per_thread;
+  int num_threads;
+  int thread_id;
+  int _1;
+  int _2;
+  int _3;
+  _Bool _4;
+  int _5;
+  int _10;
+  int _12;
+  long unsigned int _14;
+  float * _15;
+  float _16;
+  long unsigned int _18;
+  float * _19;
+  float _20;
+  long unsigned int _22;
+  unsigned int _56;
+  float _62;
+  float * _63;
+  long unsigned int _64;
+  float _66;
+  float * _67;
+  long unsigned int _73;
+  int _75;
+  sizetype _80;
+  int _82;
+  long unsigned int _95;
+  float * _96;
+  float _97;
+  long unsigned int _99;
+  float * _100;
+  float _101;
+  unsigned int _106;
+  unsigned int _107;
+
+  <bb 2> [local count: 14598062]:
+  thread_id_27 = get_thread_id ();
+  num_threads_29 = get_group_size ();
+  items_per_thread_31 = nx_30(D) / num_threads_29;
+  remainder_32 = nx_30(D) % num_threads_29;
+  _1 = thread_id_27 * items_per_thread_31;
+  _2 = MIN_EXPR <thread_id_27, remainder_32>;
+  start_i_33 = _1 + _2;
+  _3 = items_per_thread_31 + start_i_33;
+  _4 = thread_id_27 < remainder_32;
+  _5 = (int) _4;
+  end_i_34 = _3 + _5;
+  if (start_i_33 < end_i_34)
+    goto <bb 3>; [89.00%]
+  else
+    goto <bb 14>; [11.00%]
+
+  <bb 3> [local count: 12992275]:
+  ivtmp.81_76 = (sizetype) start_i_33;
+  niters.57_78 = (unsigned int) ny_37(D);
+  _56 = niters.57_78 + 4294967295;
+  bnd.58_53 = niters.57_78 >> 2;
+  _80 = bnd.58_53 w* 16;
+  niters_vector_mult_vf.59_46 = niters.57_78 & 4294967292;
+  tmp.60_45 = (int) niters_vector_mult_vf.59_46;
+
+  <bb 4> [local count: 118111600]:
+  # ivtmp.81_81 = PHI <ivtmp.81_76(3), ivtmp.81_77(13)>
+  MEM[base: q_35(D), index: ivtmp.81_81, step: 4, offset: 0B] = 0.0;
+  if (ny_37(D) > 0)
+    goto <bb 5>; [89.00%]
+  else
+    goto <bb 13>; [11.00%]
+
+  <bb 5> [local count: 105119324]:
+  _106 = (unsigned int) ivtmp.81_81;
+  _107 = _106 * 8192;
+  _10 = (int) _107;
+  if (_56 <= 2)
+    goto <bb 9>; [10.00%]
+  else
+    goto <bb 6>; [90.00%]
+
+  <bb 6> [local count: 94607391]:
+  _22 = _10 w* 4;
+  vectp.62_24 = A_40(D) + _22;
+
+  <bb 7> [local count: 567644349]:
+  # tmp_48 = PHI <0.0(6), tmp_42(7)>
+  # ivtmp.73_57 = PHI <0(6), ivtmp.73_50(7)>
+  vect__15.63_72 = MEM[base: vectp.62_24, index: ivtmp.73_57, offset: 0B];
+  vect__19.66_71 = MEM[base: p_41(D), index: ivtmp.73_57, offset: 0B];
+  vect__20.67_68 = vect__19.66_71 * vect__15.63_72;
+  stmp_tmp_42.68_84 = BIT_FIELD_REF <vect__20.67_68, 32, 0>;
+  stmp_tmp_42.68_85 = tmp_48 + stmp_tmp_42.68_84;
+  stmp_tmp_42.68_86 = BIT_FIELD_REF <vect__20.67_68, 32, 32>;
+  stmp_tmp_42.68_87 = stmp_tmp_42.68_85 + stmp_tmp_42.68_86;
+  stmp_tmp_42.68_88 = BIT_FIELD_REF <vect__20.67_68, 32, 64>;
+  stmp_tmp_42.68_89 = stmp_tmp_42.68_87 + stmp_tmp_42.68_88;
+  stmp_tmp_42.68_90 = BIT_FIELD_REF <vect__20.67_68, 32, 96>;
+  tmp_42 = stmp_tmp_42.68_89 + stmp_tmp_42.68_90;
+  ivtmp.73_50 = ivtmp.73_57 + 16;
+  if (ivtmp.73_50 != _80)
+    goto <bb 7>; [83.33%]
+  else
+    goto <bb 8>; [16.67%]
+
+  <bb 8> [local count: 94607391]:
+  if (niters_vector_mult_vf.59_46 == niters.57_78)
+    goto <bb 12>; [25.00%]
+  else
+    goto <bb 9>; [75.00%]
+
+  <bb 9> [local count: 81467476]:
+  # tmp_55 = PHI <0.0(5), tmp_42(8)>
+  # j_54 = PHI <0(5), tmp.60_45(8)>
+  _12 = _10 + j_54;
+  _14 = _12 w* 4;
+  _15 = A_40(D) + _14;
+  _16 = *_15;
+  _18 = j_54 w* 4;
+  _19 = p_41(D) + _18;
+  _20 = *_19;
+  tmp_52 = .FMA (_16, _20, tmp_55);
+  j_79 = j_54 + 1;
+  if (ny_37(D) > j_79)
+    goto <bb 10>; [89.00%]
+  else
+    goto <bb 12>; [11.00%]
+
+  <bb 10> [local count: 72506056]:
+  _82 = _10 + j_79;
+  _95 = _82 w* 4;
+  _96 = A_40(D) + _95;
+  _97 = *_96;
+  _99 = _18 + 4;
+  _100 = p_41(D) + _99;
+  _101 = *_100;
+  tmp_103 = .FMA (_97, _101, tmp_52);
+  j_104 = j_54 + 2;
+  if (ny_37(D) > j_104)
+    goto <bb 11>; [89.00%]
+  else
+    goto <bb 12>; [11.00%]
+
+  <bb 11> [local count: 64530389]:
+  _75 = _10 + j_104;
+  _73 = _75 w* 4;
+  _67 = A_40(D) + _73;
+  _66 = *_67;
+  _64 = _18 + 8;
+  _63 = p_41(D) + _64;
+  _62 = *_63;
+  tmp_60 = .FMA (_62, _66, tmp_103);
+
+  <bb 12> [local count: 105119324]:
+  # tmp_44 = PHI <tmp_60(11), tmp_52(9), tmp_42(8), tmp_103(10)>
+
+  <bb 13> [local count: 118111601]:
+  # tmp_49 = PHI <tmp_44(12), 0.0(4)>
+  MEM[base: q_35(D), index: ivtmp.81_81, step: 4, offset: 0B] = tmp_49;
+  ivtmp.81_77 = ivtmp.81_81 + 1;
+  i_105 = (int) ivtmp.81_77;
+  if (end_i_34 > i_105)
+    goto <bb 4>; [89.00%]
+  else
+    goto <bb 14>; [11.00%]
+
+  <bb 14> [local count: 14598063]:
+  return;
+
+}
+
+

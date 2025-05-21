@@ -1,0 +1,1 @@
+/opt/gridview/slurm/spool_slurmd/job12998998/slurm_script: line 10: 18307 Segmentation fault      ./main 100 100 100 10 -i /public/home/dtune/zhengh/datasets/stencils/small/input/128x128x32.bin -o output.out

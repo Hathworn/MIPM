@@ -1,0 +1,7 @@
+IO        : 2.147205
+Kernel    : 0.019630
+Copy      : 1.715078
+Driver    : 0.000231
+Compute   : 0.037093
+CPU/Kernel Overlap: 0.000274
+Timer Wall Time: 3.919086

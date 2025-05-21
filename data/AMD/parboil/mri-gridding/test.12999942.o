@@ -1,0 +1,15 @@
+
+Reading parameters
+  Total amount of GPU memory: 17163091968 bytes
+  Number of samples = 2655910
+  Grid Size = 256x256x256
+  Input Matrix Size = 60x60x60
+  Recon Matrix Size = 60x60x60
+  Kernel Width = 5.000000
+  KMax = 150.00 150.00 150.00
+  Oversampling = 5.000000
+  GPU Binsize = 32
+  Use LUT = Yes
+Reading input data from files
+Generating Look-Up Table
+Running gold version

@@ -1,0 +1,2 @@
+kernel-name,dispatch,gpu-id,queue-id,queue-index,tid,grd,wgr,lds,scr,vgpr,sgpr,fbar,sig,time,VALUBusy,performance,LDSInsts,LDSBankConflict,L1MemoryBusy,L1MemoryStalled,L2WriteUnitStalled,L2CacheHit
+"k_eam_fast",0,0,0,23,30705,700160,256,7112,0,12,5,0,0x0,14.515688,60.827545,6905.577415,15055704282,0.000000,83.562661,0.904984,0.000000,99.304680

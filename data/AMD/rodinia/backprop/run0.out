@@ -1,0 +1,10 @@
+Random number generator seed: 7
+Input layer size : 65536
+Starting training kernel
+Performing GPU computation
+time CPU to GPU memory copy = 0.227956s
+time GPU to CPU memory copy back = 0.002357s
+time GPU malloc = 0.036444s
+time kernel = 0.000506s
+Overall CPU time = 0.270914s
+Training done

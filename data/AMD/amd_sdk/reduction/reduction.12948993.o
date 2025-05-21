@@ -1,0 +1,7 @@
+Usage: ./reduction num_of_elems
+using default value: 52428800
+ARRAYSIZE: 52428800
+Array size: 200 MB
+The average performance of reduction is 266.066 GBytes/sec
+VERIFICATION: result is CORRECT
+

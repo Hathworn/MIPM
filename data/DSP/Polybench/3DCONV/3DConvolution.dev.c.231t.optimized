@@ -1,0 +1,284 @@
+
+;; Function convolution3D_kernel (convolution3D_kernel, funcdef_no=4, decl_uid=4161, cgraph_uid=5, symbol_order=9)
+
+Removing basic block 9
+Removing basic block 10
+Removing basic block 11
+Removing basic block 12
+Removing basic block 13
+__attribute__((section (".global")))
+convolution3D_kernel (int ni, int nj, int nk, int i, float * A, float * B)
+{
+  int k;
+  int j;
+  int idx;
+  int end_idx;
+  int start_idx;
+  int extra_elements;
+  int elements_per_thread;
+  int total_elements;
+  int thread_id;
+  int total_threads;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  _Bool _5;
+  int _6;
+  int _7;
+  int _8;
+  _Bool _10;
+  _Bool _11;
+  _Bool _12;
+  int _14;
+  int _15;
+  int _16;
+  int _17;
+  long unsigned int _19;
+  float * _20;
+  float _21;
+  float _23;
+  float _24;
+  float _26;
+  int _27;
+  int _28;
+  long unsigned int _30;
+  float * _31;
+  float _32;
+  float _34;
+  int _35;
+  int _36;
+  int _37;
+  long unsigned int _39;
+  float * _40;
+  float _41;
+  float _43;
+  int _44;
+  int _45;
+  int _46;
+  int _47;
+  long unsigned int _49;
+  float * _50;
+  float _51;
+  float _53;
+  int _54;
+  int _55;
+  int _56;
+  int _57;
+  long unsigned int _59;
+  float * _60;
+  float _61;
+  float _63;
+  int _64;
+  int _65;
+  int _66;
+  long unsigned int _68;
+  float * _69;
+  float _70;
+  float _72;
+  int _73;
+  int _74;
+  int _75;
+  long unsigned int _77;
+  float * _78;
+  float _79;
+  float _81;
+  int _83;
+  int _84;
+  int _85;
+  int _86;
+  long unsigned int _88;
+  float * _89;
+  float _90;
+  float _92;
+  float _94;
+  float _96;
+  int _97;
+  long unsigned int _99;
+  float * _100;
+  float _101;
+  float _103;
+  int _104;
+  int _105;
+  int _106;
+  long unsigned int _108;
+  float * _109;
+  float _110;
+  float _112;
+  int _113;
+  int _114;
+  int _115;
+  long unsigned int _117;
+  float * _118;
+  float _119;
+  float * _121;
+  float _122;
+  unsigned int _123;
+  unsigned int _125;
+  int _136;
+  _Bool _147;
+  _Bool _148;
+  _Bool _149;
+  _Bool _150;
+  _Bool _151;
+  _Bool _152;
+  unsigned int _155;
+  unsigned int _159;
+  unsigned int _162;
+  int _177;
+  _Bool _178;
+
+  <bb 2> [local count: 118111600]:
+  total_threads_128 = get_group_size ();
+  thread_id_130 = get_thread_id ();
+  _1 = nj_131(D) + -1;
+  _2 = nk_132(D) + -1;
+  total_elements_133 = _1 * _2;
+  elements_per_thread_134 = total_elements_133 / total_threads_128;
+  extra_elements_135 = total_elements_133 % total_threads_128;
+  _3 = thread_id_130 * elements_per_thread_134;
+  _136 = MIN_EXPR <thread_id_130, extra_elements_135>;
+  start_idx_137 = _3 + _136;
+  _4 = elements_per_thread_134 + start_idx_137;
+  _5 = thread_id_130 < extra_elements_135;
+  _6 = (int) _5;
+  end_idx_138 = _4 + _6;
+  if (start_idx_137 < end_idx_138)
+    goto <bb 4>; [89.00%]
+  else
+    goto <bb 3>; [11.00%]
+
+  <bb 3> [local count: 118111601]:
+  return;
+
+  <bb 4> [local count: 105119324]:
+  _125 = (unsigned int) i_142(D);
+  _123 = _125 + 4294967295;
+  _155 = _123 * 256;
+  _14 = (int) _155;
+  _159 = _125 * 256;
+  _54 = (int) _159;
+  _162 = _159 + 256;
+  _83 = (int) _162;
+  _177 = ni_141(D) + -1;
+  _178 = i_142(D) < _177;
+
+  <bb 5> [local count: 955630223]:
+  # idx_156 = PHI <start_idx_137(4), idx_146(8)>
+  _7 = idx_156 / _2;
+  j_139 = _7 + 1;
+  _8 = idx_156 % _2;
+  k_140 = _8 + 1;
+  _151 = _1 > j_139;
+  _149 = _151 & _178;
+  _150 = _2 > k_140;
+  _148 = _149 & _150;
+  if (_148 != 0)
+    goto <bb 6>; [12.50%]
+  else
+    goto <bb 8>; [87.50%]
+
+  <bb 6> [local count: 119453778]:
+  _10 = i_142(D) > 0;
+  _11 = j_139 > 0;
+  _12 = _10 & _11;
+  _152 = k_140 > 0;
+  _147 = _12 & _152;
+  if (_147 != 0)
+    goto <bb 7>; [29.50%]
+  else
+    goto <bb 8>; [70.50%]
+
+  <bb 7> [local count: 35238864]:
+  _15 = _7 + _14;
+  _16 = _15 * 256;
+  _17 = _8 + _16;
+  _19 = _17 w* 4;
+  _20 = A_143(D) + _19;
+  _21 = *_20;
+  _23 = _21 * 5.0e+0;
+  _24 = .FMA (_21, 2.0e+0, _23);
+  _26 = .FMA (_21, -8.0e+0, _24);
+  _27 = _8 + 2;
+  _28 = _16 + _27;
+  _30 = _28 w* 4;
+  _31 = A_143(D) + _30;
+  _32 = *_31;
+  _34 = .FMA (_32, 2.0e+0, _26);
+  _35 = _14 + j_139;
+  _36 = _35 * 256;
+  _37 = _27 + _36;
+  _39 = _37 w* 4;
+  _40 = A_143(D) + _39;
+  _41 = *_40;
+  _43 = .FMA (_41, 5.0e+0, _34);
+  _44 = _7 + 2;
+  _45 = _14 + _44;
+  _46 = _45 * 256;
+  _47 = _27 + _46;
+  _49 = _47 w* 4;
+  _50 = A_143(D) + _49;
+  _51 = *_50;
+  _53 = .FMA (_51, -8.0e+0, _43);
+  _55 = _7 + _54;
+  _56 = _55 * 256;
+  _57 = _56 + k_140;
+  _59 = _57 w* 4;
+  _60 = A_143(D) + _59;
+  _61 = *_60;
+  _63 = .FMA (_61, -3.0e+0, _53);
+  _64 = _54 + j_139;
+  _65 = _64 * 256;
+  _66 = _65 + k_140;
+  _68 = _66 w* 4;
+  _69 = A_143(D) + _68;
+  _70 = *_69;
+  _72 = .FMA (_70, 6.0e+0, _63);
+  _73 = _44 + _54;
+  _74 = _73 * 256;
+  _75 = _74 + k_140;
+  _77 = _75 w* 4;
+  _78 = A_143(D) + _77;
+  _79 = *_78;
+  _81 = .FMA (_79, -9.0e+0, _72);
+  _84 = _7 + _83;
+  _85 = _84 * 256;
+  _86 = _8 + _85;
+  _88 = _86 w* 4;
+  _89 = A_143(D) + _88;
+  _90 = *_89;
+  _92 = .FMA (_90, 4.0e+0, _81);
+  _94 = .FMA (_90, 7.0e+0, _92);
+  _96 = .FMA (_90, 1.0e+1, _94);
+  _97 = _27 + _85;
+  _99 = _97 w* 4;
+  _100 = A_143(D) + _99;
+  _101 = *_100;
+  _103 = .FMA (_101, 4.0e+0, _96);
+  _104 = _83 + j_139;
+  _105 = _104 * 256;
+  _106 = _27 + _105;
+  _108 = _106 w* 4;
+  _109 = A_143(D) + _108;
+  _110 = *_109;
+  _112 = .FMA (_110, 7.0e+0, _103);
+  _113 = _44 + _83;
+  _114 = _113 * 256;
+  _115 = _27 + _114;
+  _117 = _115 w* 4;
+  _118 = A_143(D) + _117;
+  _119 = *_118;
+  _121 = B_144(D) + _68;
+  _122 = .FMA (_119, 1.0e+1, _112);
+  *_121 = _122;
+
+  <bb 8> [local count: 955630224]:
+  idx_146 = idx_156 + 1;
+  if (end_idx_138 != idx_146)
+    goto <bb 5>; [89.00%]
+  else
+    goto <bb 3>; [11.00%]
+
+}
+
+

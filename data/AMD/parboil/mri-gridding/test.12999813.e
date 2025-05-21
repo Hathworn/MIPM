@@ -1,0 +1,1 @@
+/opt/gridview/slurm/spool_slurmd/job12999813/slurm_script: line 10:  2836 Segmentation fault      (core dumped) ./main -i /public/home/dtune/zhengh/datasets/mri-gridding/small/input/small.uks -o output.txt

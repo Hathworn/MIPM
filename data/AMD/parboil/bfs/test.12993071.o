@@ -1,0 +1,8 @@
+Starting GPU kernel
+GPU kernel done
+IO        : 0.314376
+Kernel    : 0.052362
+Copy      : 1.160026
+Driver    : 0.052362
+CPU/Kernel Overlap: 0.052362
+Timer Wall Time: 1.526856

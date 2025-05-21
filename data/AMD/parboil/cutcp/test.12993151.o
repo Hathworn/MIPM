@@ -1,0 +1,19 @@
+read 96603 atoms from file '/public/home/dtune/zhengh/datasets/cutcp/large/input/watbox.sl100.pqr'
+extent of domain is:
+  minimum -49.998 -49.997 -49.996
+  maximum 50 49.99 49.971
+padding domain by 0.5 Angstroms
+domain lengths are 100.998 by 100.987 by 100.967
+
+Invoking CUDA kernel on 26 region planes...
+  computing plane 0  computing plane 1  computing plane 2  computing plane 3  computing plane 4  computing plane 5  computing plane 6  computing plane 7  computing plane 8  computing plane 9  computing plane 10  computing plane 11  computing plane 12  computing plane 13  computing plane 14  computing plane 15  computing plane 16  computing plane 17  computing plane 18  computing plane 19  computing plane 20  computing plane 21  computing plane 22  computing plane 23  computing plane 24  computing plane 25Finished CUDA kernel calls                        
+computing extra atoms on CPU
+
+
+IO        : 0.239004
+Kernel    : 0.081737
+Copy      : 1.192157
+Driver    : 0.000629
+Compute   : 1.557632
+CPU/Kernel Overlap: 0.000678
+Timer Wall Time: 3.070615

@@ -1,0 +1,495 @@
+
+;; Function fdtd_step1_kernel (fdtd_step1_kernel, funcdef_no=3, decl_uid=4160, cgraph_uid=4, symbol_order=10)
+
+Removing basic block 17
+Removing basic block 18
+Removing basic block 19
+Removing basic block 20
+Removing basic block 21
+Removing basic block 22
+Removing basic block 23
+__attribute__((section (".global")))
+fdtd_step1_kernel (int nx, int ny, int t, float * _fict_, float * ex, float * ey, float * hz)
+{
+  sizetype ivtmp.11;
+  int j;
+  int i;
+  int idx;
+  float tmp;
+  int start;
+  int total_elements;
+  int num_threads;
+  int thread_id;
+  int _1;
+  int _2;
+  long unsigned int _5;
+  float * _6;
+  long unsigned int _9;
+  float * _10;
+  int _11;
+  int _12;
+  long unsigned int _14;
+  float * _15;
+  float _16;
+  float * _17;
+  float _18;
+  int _20;
+  int _21;
+  long unsigned int _23;
+  float * _24;
+  float _25;
+  float _26;
+  float _28;
+  float _29;
+  int iftmp.0_30;
+  float _32;
+  int iftmp.0_42;
+  float * _55;
+  long unsigned int _57;
+  float _62;
+  float _64;
+  float _75;
+  unsigned int _84;
+  unsigned int _85;
+  int _86;
+
+  <bb 2> [local count: 118111600]:
+  thread_id_35 = get_thread_id ();
+  num_threads_37 = get_group_size ();
+  total_elements_40 = nx_38(D) * ny_39(D);
+  _1 = total_elements_40 / num_threads_37;
+  start_41 = _1 * thread_id_35;
+  _2 = num_threads_37 + -1;
+  if (_2 != thread_id_35)
+    goto <bb 3>; [66.00%]
+  else
+    goto <bb 4>; [34.00%]
+
+  <bb 3> [local count: 77953656]:
+  iftmp.0_42 = _1 + start_41;
+
+  <bb 4> [local count: 118111600]:
+  # iftmp.0_30 = PHI <iftmp.0_42(3), total_elements_40(2)>
+  _5 = t_43(D) w* 4;
+  _6 = _fict__44(D) + _5;
+  tmp_45 = *_6;
+  if (iftmp.0_30 > start_41)
+    goto <bb 5>; [89.00%]
+  else
+    goto <bb 16>; [11.00%]
+
+  <bb 5> [local count: 105119324]:
+  if (ny_39(D) != 1)
+    goto <bb 6>; [20.00%]
+  else
+    goto <bb 10>; [80.00%]
+
+  <bb 6> [local count: 191126040]:
+  # idx_53 = PHI <start_41(5), idx_52(9)>
+  i_46 = idx_53 / ny_39(D);
+  j_47 = idx_53 % ny_39(D);
+  if (i_46 == 0)
+    goto <bb 7>; [50.00%]
+  else
+    goto <bb 8>; [50.00%]
+
+  <bb 7> [local count: 95563020]:
+  _9 = j_47 w* 4;
+  _10 = ey_48(D) + _9;
+  *_10 = tmp_45;
+  goto <bb 9>; [100.00%]
+
+  <bb 8> [local count: 95563020]:
+  _11 = ny_39(D) * i_46;
+  _12 = _11 + j_47;
+  _14 = _12 w* 4;
+  _15 = ey_48(D) + _14;
+  _16 = *_15;
+  _17 = hz_49(D) + _14;
+  _18 = *_17;
+  _20 = _11 - ny_39(D);
+  _21 = _20 + j_47;
+  _23 = _21 w* 4;
+  _24 = hz_49(D) + _23;
+  _25 = *_24;
+  _26 = _18 - _25;
+  _28 = .FNMA (_26, 5.0e-1, _16);
+  *_15 = _28;
+
+  <bb 9> [local count: 191126041]:
+  idx_52 = idx_53 + 1;
+  if (iftmp.0_30 != idx_52)
+    goto <bb 6>; [89.00%]
+  else
+    goto <bb 15>; [11.00%]
+
+  <bb 10> [local count: 84095460]:
+  ivtmp.11_69 = (sizetype) start_41;
+
+  <bb 11> [local count: 764504183]:
+  # ivtmp.11_71 = PHI <ivtmp.11_69(10), ivtmp.11_70(14)>
+  idx_60 = (int) ivtmp.11_71;
+  if (idx_60 == 0)
+    goto <bb 12>; [50.00%]
+  else
+    goto <bb 13>; [50.00%]
+
+  <bb 12> [local count: 382252091]:
+  *ey_48(D) = tmp_45;
+  goto <bb 14>; [100.00%]
+
+  <bb 13> [local count: 382252091]:
+  _64 = MEM[base: ey_48(D), index: ivtmp.11_71, step: 4, offset: 0B];
+  _62 = MEM[base: hz_49(D), index: ivtmp.11_71, step: 4, offset: 0B];
+  _84 = (unsigned int) ivtmp.11_71;
+  _85 = _84 + 4294967295;
+  _86 = (int) _85;
+  _57 = _86 w* 4;
+  _55 = hz_49(D) + _57;
+  _32 = *_55;
+  _29 = _62 - _32;
+  _75 = .FNMA (_29, 5.0e-1, _64);
+  MEM[base: ey_48(D), index: ivtmp.11_71, step: 4, offset: 0B] = _75;
+
+  <bb 14> [local count: 764504183]:
+  ivtmp.11_70 = ivtmp.11_71 + 1;
+  idx_83 = (int) ivtmp.11_70;
+  if (iftmp.0_30 > idx_83)
+    goto <bb 11>; [89.00%]
+  else
+    goto <bb 15>; [11.00%]
+
+  <bb 15> [local count: 105119324]:
+
+  <bb 16> [local count: 118111601]:
+  return;
+
+}
+
+
+
+;; Function fdtd_step2_kernel (fdtd_step2_kernel, funcdef_no=4, decl_uid=4180, cgraph_uid=5, symbol_order=11)
+
+Removing basic block 11
+Removing basic block 12
+Removing basic block 13
+Removing basic block 14
+Removing basic block 15
+Removing basic block 16
+Removing basic block 17
+__attribute__((section (".global")))
+fdtd_step2_kernel (int nx, int ny, int t, float * ex, float * ey, float * hz)
+{
+  int j;
+  int i;
+  int idx;
+  int start;
+  int total_elements;
+  int num_threads;
+  int thread_id;
+  int _1;
+  int _2;
+  _Bool _4;
+  _Bool _5;
+  _Bool _6;
+  int _7;
+  int _8;
+  long unsigned int _10;
+  float * _11;
+  float _12;
+  float * _13;
+  float _14;
+  int _15;
+  int _16;
+  long unsigned int _18;
+  float * _19;
+  float _20;
+  float _21;
+  float _23;
+  int iftmp.1_25;
+  int iftmp.1_37;
+  _Bool _44;
+  _Bool _50;
+
+  <bb 2> [local count: 118111600]:
+  thread_id_30 = get_thread_id ();
+  num_threads_32 = get_group_size ();
+  total_elements_35 = nx_33(D) * ny_34(D);
+  _1 = total_elements_35 / num_threads_32;
+  start_36 = _1 * thread_id_30;
+  _2 = num_threads_32 + -1;
+  if (_2 != thread_id_30)
+    goto <bb 3>; [66.00%]
+  else
+    goto <bb 4>; [34.00%]
+
+  <bb 3> [local count: 77953656]:
+  iftmp.1_37 = _1 + start_36;
+
+  <bb 4> [local count: 118111600]:
+  # iftmp.1_25 = PHI <iftmp.1_37(3), total_elements_35(2)>
+  if (iftmp.1_25 > start_36)
+    goto <bb 5>; [89.00%]
+  else
+    goto <bb 10>; [11.00%]
+
+  <bb 5> [local count: 105119324]:
+  if (ny_34(D) != 1)
+    goto <bb 6>; [20.00%]
+  else
+    goto <bb 9>; [80.00%]
+
+  <bb 6> [local count: 191126040]:
+  # idx_47 = PHI <start_36(5), idx_43(8)>
+  i_38 = idx_47 / ny_34(D);
+  j_39 = idx_47 % ny_34(D);
+  _4 = nx_33(D) > i_38;
+  _5 = ny_34(D) > j_39;
+  _6 = _4 & _5;
+  _44 = j_39 > 0;
+  _50 = _6 & _44;
+  if (_50 != 0)
+    goto <bb 7>; [29.50%]
+  else
+    goto <bb 8>; [70.50%]
+
+  <bb 7> [local count: 56382182]:
+  _7 = ny_34(D) * i_38;
+  _8 = _7 + j_39;
+  _10 = _8 w* 4;
+  _11 = ex_40(D) + _10;
+  _12 = *_11;
+  _13 = hz_41(D) + _10;
+  _14 = *_13;
+  _15 = j_39 + -1;
+  _16 = _7 + _15;
+  _18 = _16 w* 4;
+  _19 = hz_41(D) + _18;
+  _20 = *_19;
+  _21 = _14 - _20;
+  _23 = .FNMA (_21, 5.0e-1, _12);
+  *_11 = _23;
+
+  <bb 8> [local count: 191126041]:
+  idx_43 = idx_47 + 1;
+  if (iftmp.1_25 != idx_43)
+    goto <bb 6>; [89.00%]
+  else
+    goto <bb 9>; [11.00%]
+
+  <bb 9> [local count: 105119324]:
+
+  <bb 10> [local count: 118111601]:
+  return;
+
+}
+
+
+
+;; Function fdtd_step3_kernel (fdtd_step3_kernel, funcdef_no=5, decl_uid=4199, cgraph_uid=6, symbol_order=12)
+
+Removing basic block 14
+Removing basic block 15
+Removing basic block 16
+Removing basic block 17
+Removing basic block 18
+Removing basic block 19
+Removing basic block 20
+Removing basic block 21
+Removing basic block 22
+Removing basic block 23
+__attribute__((section (".global")))
+fdtd_step3_kernel (int nx, int ny, int t, float * ex, float * ey, float * hz)
+{
+  int j;
+  int i;
+  int idx;
+  int start;
+  int total_elements;
+  int num_threads;
+  int thread_id;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  int _6;
+  int _7;
+  long unsigned int _9;
+  float * _10;
+  float _11;
+  int _12;
+  int _13;
+  long unsigned int _15;
+  float * _16;
+  float _17;
+  float * _18;
+  float _19;
+  float _20;
+  int _22;
+  int _23;
+  long unsigned int _25;
+  float * _26;
+  float _27;
+  float _28;
+  float * _29;
+  float _30;
+  float _31;
+  float _33;
+  float _34;
+  int iftmp.2_35;
+  int iftmp.2_47;
+  _Bool _55;
+  float _56;
+  float _57;
+  _Bool _58;
+  _Bool _59;
+  float * _63;
+  float _64;
+  float _65;
+  float * _66;
+  long unsigned int _67;
+  int _69;
+  int _71;
+  float _72;
+  float _73;
+  float * _74;
+  float _75;
+  float * _76;
+  long unsigned int _77;
+  int _79;
+  int _80;
+  float _81;
+  float * _82;
+  long unsigned int _83;
+  int _85;
+  _Bool _87;
+  _Bool _88;
+  _Bool _89;
+
+  <bb 2> [local count: 118111600]:
+  thread_id_40 = get_thread_id ();
+  num_threads_42 = get_group_size ();
+  _1 = nx_43(D) + -1;
+  _2 = ny_44(D) + -1;
+  total_elements_45 = _1 * _2;
+  _3 = total_elements_45 / num_threads_42;
+  start_46 = _3 * thread_id_40;
+  _4 = num_threads_42 + -1;
+  if (_4 != thread_id_40)
+    goto <bb 3>; [66.00%]
+  else
+    goto <bb 4>; [34.00%]
+
+  <bb 3> [local count: 77953656]:
+  iftmp.2_47 = _3 + start_46;
+
+  <bb 4> [local count: 118111600]:
+  # iftmp.2_35 = PHI <iftmp.2_47(3), total_elements_45(2)>
+  if (iftmp.2_35 > start_46)
+    goto <bb 5>; [89.00%]
+  else
+    goto <bb 13>; [11.00%]
+
+  <bb 5> [local count: 105119324]:
+  if (ny_44(D) != 1)
+    goto <bb 6>; [20.00%]
+  else
+    goto <bb 9>; [80.00%]
+
+  <bb 6> [local count: 191126040]:
+  # idx_60 = PHI <start_46(5), idx_54(8)>
+  i_48 = idx_60 / _2;
+  j_49 = idx_60 % _2;
+  _55 = _2 > j_49;
+  _59 = _1 > i_48;
+  _58 = _55 & _59;
+  if (_58 != 0)
+    goto <bb 7>; [25.00%]
+  else
+    goto <bb 8>; [75.00%]
+
+  <bb 7> [local count: 47781510]:
+  _6 = ny_44(D) * i_48;
+  _7 = _6 + j_49;
+  _9 = _7 w* 4;
+  _10 = hz_50(D) + _9;
+  _11 = *_10;
+  _12 = j_49 + 1;
+  _13 = _6 + _12;
+  _15 = _13 w* 4;
+  _16 = ex_51(D) + _15;
+  _17 = *_16;
+  _18 = ex_51(D) + _9;
+  _19 = *_18;
+  _20 = _17 - _19;
+  _22 = _6 + ny_44(D);
+  _23 = _22 + j_49;
+  _25 = _23 w* 4;
+  _26 = ey_52(D) + _25;
+  _27 = *_26;
+  _28 = _20 + _27;
+  _29 = ey_52(D) + _9;
+  _30 = *_29;
+  _31 = _28 - _30;
+  _33 = .FNMA (_31, 6.99999988079071044921875e-1, _11);
+  *_10 = _33;
+
+  <bb 8> [local count: 191126041]:
+  idx_54 = idx_60 + 1;
+  if (iftmp.2_35 != idx_54)
+    goto <bb 6>; [89.00%]
+  else
+    goto <bb 12>; [11.00%]
+
+  <bb 9> [local count: 764504183]:
+  # idx_93 = PHI <start_46(5), idx_97(11)>
+  i_91 = idx_93 / 0;
+  j_90 = idx_93 % 0;
+  _89 = j_90 < 0;
+  _88 = _1 > i_91;
+  _87 = _88 & _89;
+  if (_87 != 0)
+    goto <bb 10>; [25.00%]
+  else
+    goto <bb 11>; [75.00%]
+
+  <bb 10> [local count: 191126046]:
+  _85 = j_90 + i_91;
+  _83 = _85 w* 4;
+  _82 = hz_50(D) + _83;
+  _81 = *_82;
+  _80 = j_90 + 1;
+  _79 = _80 + i_91;
+  _77 = _79 w* 4;
+  _76 = ex_51(D) + _77;
+  _75 = *_76;
+  _74 = ex_51(D) + _83;
+  _73 = *_74;
+  _72 = _75 - _73;
+  _71 = i_91 + 1;
+  _69 = _71 + j_90;
+  _67 = _69 w* 4;
+  _66 = ey_52(D) + _67;
+  _65 = *_66;
+  _64 = _65 + _72;
+  _63 = ey_52(D) + _83;
+  _57 = *_63;
+  _56 = _64 - _57;
+  _34 = .FNMA (_56, 6.99999988079071044921875e-1, _81);
+  *_82 = _34;
+
+  <bb 11> [local count: 764504183]:
+  idx_97 = idx_93 + 1;
+  if (iftmp.2_35 != idx_97)
+    goto <bb 9>; [89.00%]
+  else
+    goto <bb 12>; [11.00%]
+
+  <bb 12> [local count: 105119324]:
+
+  <bb 13> [local count: 118111601]:
+  return;
+
+}
+
+

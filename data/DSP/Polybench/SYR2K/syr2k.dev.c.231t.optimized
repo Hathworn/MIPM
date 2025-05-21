@@ -1,0 +1,204 @@
+
+;; Function syr2k_kernel (syr2k_kernel, funcdef_no=4, decl_uid=4162, cgraph_uid=5, symbol_order=9)
+
+Removing basic block 15
+Removing basic block 16
+Removing basic block 17
+Removing basic block 18
+Removing basic block 19
+Removing basic block 20
+Removing basic block 21
+Removing basic block 22
+Removing basic block 23
+__attribute__((section (".global")))
+syr2k_kernel (int ni, int nj, double alpha, double beta, double * a, double * b, double * c)
+{
+  sizetype ivtmp.33;
+  double stmp_tmp_57.27;
+  vector(2) double vect__31.26;
+  vector(2) double vect__30.25;
+  vector(2) double vect__29.24;
+  vector(2) double * vectp.23;
+  vector(2) double vect__27.21;
+  vector(2) double vect__26.20;
+  vector(2) double * vectp.19;
+  vector(2) double vect__23.16;
+  vector(2) double * vectp.15;
+  vector(2) double vect__17.13;
+  vector(2) double vect__16.12;
+  vector(2) double * vectp.11;
+  int tmp.9;
+  unsigned int niters_vector_mult_vf.8;
+  unsigned int bnd.7;
+  unsigned int niters.6;
+  int k;
+  double tmp;
+  int j;
+  int i;
+  int idx;
+  int start_idx;
+  int work_per_thread;
+  int num_threads;
+  int thread_id;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  int _6;
+  int _7;
+  long unsigned int _9;
+  double * _10;
+  int _11;
+  int _18;
+  int _45;
+  int _60;
+  sizetype _88;
+  long unsigned int _102;
+  vector(2) double vect_cst__106;
+  long unsigned int _110;
+  double _122;
+  double _123;
+  double _124;
+  double * _125;
+  double _126;
+  double _127;
+  double * _131;
+  double _133;
+  double * _134;
+  long unsigned int _135;
+  int _137;
+  double _138;
+  double _139;
+  double * _140;
+  long unsigned int _141;
+  int _143;
+
+  <bb 2> [local count: 54066899]:
+  thread_id_39 = get_thread_id ();
+  num_threads_41 = get_group_size ();
+  _1 = ni_42(D) * ni_42(D);
+  _2 = _1 + num_threads_41;
+  _3 = _2 + -1;
+  work_per_thread_43 = _3 / num_threads_41;
+  start_idx_44 = thread_id_39 * work_per_thread_43;
+  _4 = work_per_thread_43 + start_idx_44;
+  _45 = MIN_EXPR <_1, _4>;
+  if (start_idx_44 < _45)
+    goto <bb 3>; [89.00%]
+  else
+    goto <bb 14>; [11.00%]
+
+  <bb 3> [local count: 48119540]:
+  niters.6_146 = (unsigned int) nj_52(D);
+  bnd.7_116 = niters.6_146 >> 1;
+  _88 = bnd.7_116 w* 16;
+  niters_vector_mult_vf.8_115 = niters.6_146 & 4294967294;
+  tmp.9_114 = (int) niters_vector_mult_vf.8_115;
+
+  <bb 4> [local count: 437450371]:
+  # idx_64 = PHI <start_idx_44(3), idx_59(13)>
+  i_46 = idx_64 / ni_42(D);
+  j_47 = idx_64 % ni_42(D);
+  _60 = MAX_EXPR <i_46, j_47>;
+  if (ni_42(D) > _60)
+    goto <bb 5>; [27.00%]
+  else
+    goto <bb 13>; [73.00%]
+
+  <bb 5> [local count: 118111600]:
+  _6 = ni_42(D) * i_46;
+  _7 = _6 + j_47;
+  _9 = _7 w* 8;
+  _10 = c_48(D) + _9;
+  tmp_49 = *_10;
+  tmp_51 = tmp_49 * beta_50(D);
+  if (nj_52(D) > 0)
+    goto <bb 6>; [89.00%]
+  else
+    goto <bb 12>; [11.00%]
+
+  <bb 6> [local count: 105119324]:
+  _11 = i_46 * nj_52(D);
+  _18 = j_47 * nj_52(D);
+  if (nj_52(D) == 1)
+    goto <bb 10>; [10.00%]
+  else
+    goto <bb 7>; [90.00%]
+
+  <bb 7> [local count: 94607391]:
+  _110 = _11 w* 8;
+  vectp.11_112 = a_54(D) + _110;
+  vect_cst__106 = {alpha_55(D), alpha_55(D)};
+  _102 = _18 w* 8;
+  vectp.15_104 = b_56(D) + _102;
+  vectp.19_97 = b_56(D) + _110;
+  vectp.23_89 = a_54(D) + _102;
+
+  <bb 8> [local count: 567644349]:
+  # tmp_62 = PHI <tmp_51(7), tmp_57(8)>
+  # ivtmp.33_96 = PHI <0(7), ivtmp.33_95(8)>
+  vect__16.12_107 = MEM[base: vectp.11_112, index: ivtmp.33_96, offset: 0B];
+  vect__17.13_105 = vect_cst__106 * vect__16.12_107;
+  vect__23.16_99 = MEM[base: vectp.15_104, index: ivtmp.33_96, offset: 0B];
+  vect__26.20_92 = MEM[base: vectp.19_97, index: ivtmp.33_96, offset: 0B];
+  vect__27.21_90 = vect__26.20_92 * vect_cst__106;
+  vect__29.24_84 = MEM[base: vectp.23_89, index: ivtmp.33_96, offset: 0B];
+  vect__30.25_83 = vect__29.24_84 * vect__27.21_90;
+  vect__31.26_82 = .FMA (vect__23.16_99, vect__17.13_105, vect__30.25_83);
+  stmp_tmp_57.27_81 = BIT_FIELD_REF <vect__31.26_82, 64, 0>;
+  stmp_tmp_57.27_80 = tmp_62 + stmp_tmp_57.27_81;
+  stmp_tmp_57.27_79 = BIT_FIELD_REF <vect__31.26_82, 64, 64>;
+  tmp_57 = stmp_tmp_57.27_79 + stmp_tmp_57.27_80;
+  ivtmp.33_95 = ivtmp.33_96 + 16;
+  if (_88 != ivtmp.33_95)
+    goto <bb 8>; [83.33%]
+  else
+    goto <bb 9>; [16.67%]
+
+  <bb 9> [local count: 94607391]:
+  if (niters_vector_mult_vf.8_115 == niters.6_146)
+    goto <bb 11>; [33.33%]
+  else
+    goto <bb 10>; [66.67%]
+
+  <bb 10> [local count: 668941152]:
+  # tmp_118 = PHI <tmp_51(6), tmp_57(9)>
+  # k_117 = PHI <0(6), tmp.9_114(9)>
+  _143 = _11 + k_117;
+  _141 = _143 w* 8;
+  _140 = a_54(D) + _141;
+  _139 = *_140;
+  _138 = alpha_55(D) * _139;
+  _137 = _18 + k_117;
+  _135 = _137 w* 8;
+  _134 = b_56(D) + _135;
+  _133 = *_134;
+  _131 = b_56(D) + _141;
+  _127 = *_131;
+  _126 = alpha_55(D) * _127;
+  _125 = a_54(D) + _135;
+  _124 = *_125;
+  _123 = _124 * _126;
+  _122 = .FMA (_133, _138, _123);
+  tmp_121 = tmp_118 + _122;
+
+  <bb 11> [local count: 105119324]:
+  # tmp_113 = PHI <tmp_121(10), tmp_57(9)>
+
+  <bb 12> [local count: 118111601]:
+  # tmp_66 = PHI <tmp_113(11), tmp_51(5)>
+  *_10 = tmp_66;
+
+  <bb 13> [local count: 437450372]:
+  idx_59 = idx_64 + 1;
+  if (_45 != idx_59)
+    goto <bb 4>; [89.00%]
+  else
+    goto <bb 14>; [11.00%]
+
+  <bb 14> [local count: 54066900]:
+  return;
+
+}
+
+

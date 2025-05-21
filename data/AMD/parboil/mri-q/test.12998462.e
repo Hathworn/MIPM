@@ -1,0 +1,1 @@
+Launch params (512, 1, 1) are larger than launch bounds (256) for kernel _Z17ComputePhiMag_GPUPfS_S_i please add __launch_bounds__ to kernel define or use --gpu-max-threads-per-block recompile program ! 

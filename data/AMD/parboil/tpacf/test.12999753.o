@@ -1,0 +1,13 @@
+Min distance: 1.000000 arcmin
+Max distance: 10000.000000 arcmin
+Bins per dec: 5
+Total bins  : 20
+entering
+ entering
+ IO        : 0.009267
+Kernel    : 0.001566
+Copy      : 1.173323
+Driver    : 0.000162
+Compute   : 0.002262
+CPU/Kernel Overlap: 0.000205
+Timer Wall Time: 1.186501

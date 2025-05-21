@@ -1,0 +1,286 @@
+
+;; Function convolution2D_kernel (convolution2D_kernel, funcdef_no=1, decl_uid=3786, cgraph_uid=2, symbol_order=6)
+
+Removing basic block 12
+Removing basic block 13
+Removing basic block 14
+Removing basic block 15
+Removing basic block 16
+Removing basic block 17
+Removing basic block 18
+Removing basic block 19
+__attribute__((section (".global")))
+convolution2D_kernel (int ni, int nj, float * A, float * B)
+{
+  const int j;
+  int t;
+  int end;
+  const int remainder;
+  const int base_tasks;
+  const int total_tasks;
+  int thread_id;
+  int group_size;
+  int _1;
+  int _2;
+  int _5;
+  int _6;
+  int _7;
+  int _8;
+  int _9;
+  int _10;
+  int _11;
+  long unsigned int _13;
+  float * _14;
+  float _15;
+  int _17;
+  long unsigned int _19;
+  float * _20;
+  float _21;
+  float _22;
+  float _23;
+  int _24;
+  int _25;
+  long unsigned int _27;
+  float * _28;
+  float _29;
+  float _31;
+  int _32;
+  int _33;
+  long unsigned int _35;
+  float * _36;
+  float _37;
+  float _39;
+  int _40;
+  long unsigned int _42;
+  float * _43;
+  float _44;
+  float _46;
+  int _47;
+  long unsigned int _49;
+  float * _50;
+  float _51;
+  float _53;
+  int _54;
+  int _55;
+  int _56;
+  long unsigned int _58;
+  float * _59;
+  float _60;
+  float _62;
+  int _63;
+  long unsigned int _65;
+  float * _66;
+  float _67;
+  float _69;
+  int _70;
+  long unsigned int _72;
+  float * _73;
+  float _74;
+  float * _76;
+  float _77;
+  int iftmp.1_80;
+  int iftmp.0_93;
+  int iftmp.0_94;
+  int _97;
+  int iftmp.0_111;
+  int _242;
+  float _277;
+  float * _278;
+  float _280;
+  float * _281;
+  long unsigned int _282;
+  int _284;
+  float _285;
+  float _287;
+  float * _288;
+  long unsigned int _289;
+  int _291;
+  float _292;
+  float _301;
+  float _303;
+  float * _304;
+  long unsigned int _305;
+  int _307;
+  float _308;
+  float _310;
+  float * _311;
+  long unsigned int _312;
+  int _314;
+  float _315;
+  float _323;
+  float _325;
+  float * _326;
+  long unsigned int _327;
+  float _331;
+  float _332;
+  float _333;
+  float * _334;
+  long unsigned int _335;
+  float _339;
+  float * _340;
+  long unsigned int _341;
+  int _348;
+
+  <bb 2> [local count: 160390549]:
+  group_size_85 = get_group_size ();
+  thread_id_87 = get_thread_id ();
+  _1 = ni_88(D) + -2;
+  _2 = nj_89(D) + -2;
+  total_tasks_90 = _1 * _2;
+  if (total_tasks_90 <= 0)
+    goto <bb 3>; [26.36%]
+  else
+    goto <bb 4>; [73.64%]
+
+  <bb 3> [local count: 160390549]:
+  return;
+
+  <bb 4> [local count: 118111600]:
+  base_tasks_91 = total_tasks_90 / group_size_85;
+  remainder_92 = total_tasks_90 % group_size_85;
+  _242 = base_tasks_91 + 1;
+  if (thread_id_87 < remainder_92)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 6>; [50.00%]
+
+  <bb 5> [local count: 59055800]:
+  iftmp.0_94 = thread_id_87 * _242;
+  goto <bb 7>; [100.00%]
+
+  <bb 6> [local count: 59055800]:
+  _5 = remainder_92 * _242;
+  _6 = thread_id_87 - remainder_92;
+  _7 = _6 * base_tasks_91;
+  iftmp.0_93 = _5 + _7;
+
+  <bb 7> [local count: 118111600]:
+  # iftmp.1_80 = PHI <_242(5), base_tasks_91(6)>
+  # iftmp.0_111 = PHI <iftmp.0_94(5), iftmp.0_93(6)>
+  end_96 = iftmp.1_80 + iftmp.0_111;
+  if (end_96 > iftmp.0_111)
+    goto <bb 8>; [89.00%]
+  else
+    goto <bb 3>; [11.00%]
+
+  <bb 8> [local count: 105119324]:
+  if (nj_89(D) != 1)
+    goto <bb 9>; [20.00%]
+  else
+    goto <bb 11>; [80.00%]
+
+  <bb 9> [local count: 191126041]:
+  # t_79 = PHI <iftmp.0_111(8), t_102(9)>
+  _8 = t_79 / _2;
+  _9 = t_79 % _2;
+  j_98 = _9 + 1;
+  _10 = _8 * nj_89(D);
+  _11 = _9 + _10;
+  _13 = _11 w* 4;
+  _14 = A_99(D) + _13;
+  _15 = *_14;
+  _17 = _10 + j_98;
+  _19 = _17 w* 4;
+  _20 = A_99(D) + _19;
+  _21 = *_20;
+  _22 = _21 * 5.0e-1;
+  _23 = .FMA (_15, 2.0000000298023223876953125e-1, _22);
+  _24 = _9 + 2;
+  _25 = _10 + _24;
+  _27 = _25 w* 4;
+  _28 = A_99(D) + _27;
+  _29 = *_28;
+  _31 = .FMA (_29, -8.00000011920928955078125e-1, _23);
+  _32 = _10 + nj_89(D);
+  _33 = _9 + _32;
+  _35 = _33 w* 4;
+  _36 = A_99(D) + _35;
+  _37 = *_36;
+  _39 = .FMA (_37, -3.00000011920928955078125e-1, _31);
+  _40 = _32 + j_98;
+  _42 = _40 w* 4;
+  _43 = A_99(D) + _42;
+  _44 = *_43;
+  _46 = .FMA (_44, 6.0000002384185791015625e-1, _39);
+  _47 = _24 + _32;
+  _49 = _47 w* 4;
+  _50 = A_99(D) + _49;
+  _51 = *_50;
+  _53 = .FMA (_51, -8.9999997615814208984375e-1, _46);
+  _55 = _32 + nj_89(D);
+  _56 = _9 + _55;
+  _58 = _56 w* 4;
+  _59 = A_99(D) + _58;
+  _60 = *_59;
+  _62 = .FMA (_60, 4.000000059604644775390625e-1, _53);
+  _63 = _55 + j_98;
+  _65 = _63 w* 4;
+  _66 = A_99(D) + _65;
+  _67 = *_66;
+  _69 = .FMA (_67, 6.99999988079071044921875e-1, _62);
+  _70 = _24 + _55;
+  _72 = _70 w* 4;
+  _73 = A_99(D) + _72;
+  _74 = *_73;
+  _76 = B_100(D) + _42;
+  _77 = .FMA (_74, 1.00000001490116119384765625e-1, _69);
+  *_76 = _77;
+  t_102 = t_79 + 1;
+  if (end_96 != t_102)
+    goto <bb 9>; [89.00%]
+  else
+    goto <bb 10>; [11.00%]
+
+  <bb 10> [local count: 105119324]:
+  goto <bb 3>; [100.00%]
+
+  <bb 11> [local count: 764504183]:
+  # t_82 = PHI <iftmp.0_111(8), t_275(11)>
+  _348 = -t_82;
+  _97 = 1 - t_82;
+  _341 = _348 w* 4;
+  _340 = A_99(D) + _341;
+  _339 = *_340;
+  _335 = _97 w* 4;
+  _334 = A_99(D) + _335;
+  _333 = *_334;
+  _332 = _333 * 5.0e-1;
+  _331 = .FMA (_339, 2.0000000298023223876953125e-1, _332);
+  _54 = 2 - t_82;
+  _327 = _54 w* 4;
+  _326 = A_99(D) + _327;
+  _325 = *_326;
+  _323 = .FMA (_325, -8.00000011920928955078125e-1, _331);
+  _315 = .FMA (_333, -3.00000011920928955078125e-1, _323);
+  _314 = 2 - t_82;
+  _312 = _314 w* 4;
+  _311 = A_99(D) + _312;
+  _310 = *_311;
+  _308 = .FMA (_310, 6.0000002384185791015625e-1, _315);
+  _307 = 3 - t_82;
+  _305 = _307 w* 4;
+  _304 = A_99(D) + _305;
+  _303 = *_304;
+  _301 = .FMA (_303, -8.9999997615814208984375e-1, _308);
+  _292 = .FMA (_325, 4.000000059604644775390625e-1, _301);
+  _291 = 3 - t_82;
+  _289 = _291 w* 4;
+  _288 = A_99(D) + _289;
+  _287 = *_288;
+  _285 = .FMA (_287, 6.99999988079071044921875e-1, _292);
+  _284 = 4 - t_82;
+  _282 = _284 w* 4;
+  _281 = A_99(D) + _282;
+  _280 = *_281;
+  _278 = B_100(D) + _312;
+  _277 = .FMA (_280, 1.00000001490116119384765625e-1, _285);
+  *_278 = _277;
+  t_275 = t_82 + 1;
+  if (end_96 != t_275)
+    goto <bb 11>; [89.00%]
+  else
+    goto <bb 10>; [11.00%]
+
+}
+
+

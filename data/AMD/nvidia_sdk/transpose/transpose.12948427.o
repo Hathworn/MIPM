@@ -1,0 +1,20 @@
+Transpose Starting...
+
+GPU Device 0: "Hopper" with compute capability 9.0
+
+> Device 0: "Device 66a1"
+> SM Capability 9.0 detected:
+> [Device 66a1] has 64 MP(s) x 128 (Cores/MP) = 8192 (Cores)
+> Compute performance scaling factor = 1.00
+
+Matrix size: 1024x1024 (64x64 tiles), tile size: 16x16, block size: 16x16
+
+transpose simple copy       , Throughput = 375.9690 GB/s, Time = 0.02078 ms, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+transpose shared memory copy, Throughput = 370.8290 GB/s, Time = 0.02107 ms, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+transpose naive             , Throughput = 64.1904 GB/s, Time = 0.12171 ms, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+transpose coalesced         , Throughput = 220.1797 GB/s, Time = 0.03548 ms, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+transpose optimized         , Throughput = 219.1520 GB/s, Time = 0.03565 ms, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+transpose coarse-grained    , Throughput = 219.7932 GB/s, Time = 0.03554 ms, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+transpose fine-grained      , Throughput = 373.0674 GB/s, Time = 0.02094 ms, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+transpose diagonal          , Throughput = 335.2126 GB/s, Time = 0.02331 ms, Size = 1048576 fp32 elements, NumDevsUsed = 1, Workgroup = 256
+Test passed

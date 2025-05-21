@@ -1,0 +1,532 @@
+
+;; Function runJacobiDSP_kernel1 (runJacobiDSP_kernel1, funcdef_no=3, decl_uid=4155, cgraph_uid=4, symbol_order=9)
+
+Removing basic block 17
+Removing basic block 18
+Removing basic block 19
+Removing basic block 20
+Removing basic block 21
+Removing basic block 22
+Removing basic block 23
+Removing basic block 24
+__attribute__((section (".global")))
+runJacobiDSP_kernel1 (int n, float * A, float * B)
+{
+  sizetype ivtmp.39;
+  sizetype ivtmp.28;
+  vector(4) float vect__27.22;
+  vector(2) double vect__25.21;
+  vector(2) double vect__24.20;
+  vector(4) float vect__23.19;
+  vector(4) float vect__22.18;
+  vector(4) float * vectp.17;
+  vector(4) float vect__18.15;
+  vector(4) float vect__17.14;
+  vector(4) float * vectp.13;
+  vector(4) float vect__15.11;
+  vector(4) float * vectp.10;
+  int tmp.8;
+  unsigned int niters_vector_mult_vf.7;
+  unsigned int bnd.6;
+  unsigned int niters.5;
+  int i;
+  int end_idx;
+  int start_idx;
+  int remainder;
+  int elements_per_thread;
+  int total_threads;
+  int thread_id;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  int _5;
+  int _6;
+  int _7;
+  int _8;
+  int _9;
+  int _10;
+  long unsigned int _13;
+  sizetype _14;
+  float * _15;
+  float _16;
+  float * _17;
+  float _18;
+  float _19;
+  sizetype _21;
+  float * _22;
+  float _23;
+  float _24;
+  double _25;
+  double _26;
+  float * _27;
+  long unsigned int _47;
+  float _48;
+  float _55;
+  double _58;
+  double _59;
+  float _60;
+  float _61;
+  float _65;
+  float _66;
+  float _68;
+  _Bool _75;
+  _Bool _76;
+  _Bool _77;
+  float * _78;
+  sizetype _79;
+  float * _82;
+  sizetype _83;
+  _Bool _86;
+  float * _87;
+  long unsigned int _88;
+  float * _90;
+  sizetype _91;
+  sizetype _92;
+  sizetype _93;
+  _Bool _94;
+  unsigned int _95;
+  unsigned int _96;
+  unsigned int _97;
+  long unsigned int _106;
+  sizetype _107;
+  float * _108;
+  float _109;
+  float * _110;
+  float _111;
+  float _112;
+  sizetype _114;
+  float * _115;
+  float _116;
+  float _117;
+  double _118;
+  double _119;
+  float * _120;
+  float _121;
+  int _128;
+  sizetype _133;
+  long unsigned int _139;
+  sizetype _147;
+  sizetype _166;
+  float * _167;
+  float _168;
+  float * _169;
+  float _170;
+  float _171;
+  sizetype _173;
+  float * _174;
+  float _175;
+  float _176;
+  double _177;
+  double _178;
+  float * _179;
+  float _180;
+  float * _186;
+  float * _187;
+  sizetype _192;
+
+  <bb 2> [local count: 118111600]:
+  thread_id_34 = get_thread_id ();
+  total_threads_36 = get_group_size ();
+  _1 = n_37(D) + -2;
+  elements_per_thread_38 = _1 / total_threads_36;
+  remainder_39 = _1 % total_threads_36;
+  if (thread_id_34 < remainder_39)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 59055800]:
+  _2 = elements_per_thread_38 + 1;
+  _3 = _2 * thread_id_34;
+  start_idx_41 = _3 + 1;
+  end_idx_43 = elements_per_thread_38 + start_idx_41;
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 59055800]:
+  _4 = elements_per_thread_38 + 1;
+  _5 = _4 * remainder_39;
+  _6 = thread_id_34 - remainder_39;
+  _7 = _6 * elements_per_thread_38;
+  _8 = _5 + _7;
+  start_idx_40 = _8 + 1;
+  _9 = elements_per_thread_38 + start_idx_40;
+  end_idx_42 = _9 + -1;
+
+  <bb 5> [local count: 118111600]:
+  # end_idx_29 = PHI <end_idx_43(3), end_idx_42(4)>
+  # start_idx_56 = PHI <start_idx_41(3), start_idx_40(4)>
+  _10 = n_37(D) + -1;
+  end_idx_44 = MIN_EXPR <_10, end_idx_29>;
+  if (end_idx_44 >= start_idx_56)
+    goto <bb 6>; [89.00%]
+  else
+    goto <bb 16>; [11.00%]
+
+  <bb 6> [local count: 105119324]:
+  _97 = (unsigned int) end_idx_44;
+  _96 = (unsigned int) start_idx_56;
+  _95 = _97 - _96;
+  _94 = _95 > 2;
+  _93 = (sizetype) start_idx_56;
+  _92 = _93 + 5;
+  _91 = _92 * 4;
+  _90 = A_45(D) + _91;
+  _88 = _91 + 18446744073709551596;
+  _87 = B_46(D) + _88;
+  _86 = _87 >= _90;
+  _83 = _91 + 18446744073709551612;
+  _82 = B_46(D) + _83;
+  _79 = _91 + 18446744073709551592;
+  _78 = A_45(D) + _79;
+  _77 = _78 >= _82;
+  _76 = _77 | _86;
+  _75 = _76 & _94;
+  if (_75 != 0)
+    goto <bb 7>; [80.00%]
+  else
+    goto <bb 13>; [20.00%]
+
+  <bb 7> [local count: 84095460]:
+  niters.5_50 = _95 + 1;
+  bnd.6_125 = niters.5_50 >> 2;
+  _133 = _91 + 18446744073709551592;
+  vectp.10_130 = A_45(D) + _133;
+  _139 = _91 + 18446744073709551596;
+  vectp.13_137 = A_45(D) + _139;
+  _147 = _91 + 18446744073709551600;
+  vectp.17_144 = A_45(D) + _147;
+  _192 = bnd.6_125 w* 16;
+
+  <bb 8> [local count: 504572758]:
+  # ivtmp.39_189 = PHI <0(7), ivtmp.39_190(8)>
+  vect__15.11_136 = MEM[base: vectp.10_130, index: ivtmp.39_189, offset: 0B];
+  vect__17.14_142 = MEM[base: vectp.13_137, index: ivtmp.39_189, offset: 0B];
+  vect__18.15_143 = vect__15.11_136 + vect__17.14_142;
+  vect__22.18_150 = MEM[base: vectp.17_144, index: ivtmp.39_189, offset: 0B];
+  vect__23.19_151 = vect__18.15_143 + vect__22.18_150;
+  vect__24.20_152 = [vec_unpack_lo_expr] vect__23.19_151;
+  vect__24.20_153 = [vec_unpack_hi_expr] vect__23.19_151;
+  vect__25.21_155 = vect__24.20_152 * { 3.3333000000000001517008740847813896834850311279296875e-1, 3.3333000000000001517008740847813896834850311279296875e-1 };
+  vect__25.21_156 = vect__24.20_153 * { 3.3333000000000001517008740847813896834850311279296875e-1, 3.3333000000000001517008740847813896834850311279296875e-1 };
+  vect__27.22_157 = VEC_PACK_TRUNC_EXPR <vect__25.21_155, vect__25.21_156>;
+  MEM[base: _87, index: ivtmp.39_189, offset: 0B] = vect__27.22_157;
+  ivtmp.39_190 = ivtmp.39_189 + 16;
+  if (ivtmp.39_190 != _192)
+    goto <bb 8>; [83.33%]
+  else
+    goto <bb 9>; [16.67%]
+
+  <bb 9> [local count: 84095460]:
+  niters_vector_mult_vf.7_126 = niters.5_50 & 4294967292;
+  _128 = (int) niters_vector_mult_vf.7_126;
+  tmp.8_127 = start_idx_56 + _128;
+  if (niters.5_50 == niters_vector_mult_vf.7_126)
+    goto <bb 14>; [25.00%]
+  else
+    goto <bb 10>; [75.00%]
+
+  <bb 10> [local count: 63071595]:
+  _13 = tmp.8_127 w* 4;
+  _14 = _13 + 18446744073709551612;
+  _15 = A_45(D) + _14;
+  _16 = *_15;
+  _17 = A_45(D) + _13;
+  _18 = *_17;
+  _19 = _16 + _18;
+  _21 = _13 + 4;
+  _22 = A_45(D) + _21;
+  _23 = *_22;
+  _24 = _19 + _23;
+  _25 = (double) _24;
+  _26 = _25 * 3.3333000000000001517008740847813896834850311279296875e-1;
+  _27 = B_46(D) + _13;
+  _48 = (float) _26;
+  *_27 = _48;
+  i_51 = tmp.8_127 + 1;
+  if (end_idx_44 >= i_51)
+    goto <bb 11>; [89.00%]
+  else
+    goto <bb 14>; [11.00%]
+
+  <bb 11> [local count: 56133721]:
+  _47 = i_51 w* 4;
+  _166 = _47 + 18446744073709551612;
+  _167 = A_45(D) + _166;
+  _168 = *_167;
+  _169 = A_45(D) + _47;
+  _170 = *_169;
+  _171 = _168 + _170;
+  _173 = _47 + 4;
+  _174 = A_45(D) + _173;
+  _175 = *_174;
+  _176 = _171 + _175;
+  _177 = (double) _176;
+  _178 = _177 * 3.3333000000000001517008740847813896834850311279296875e-1;
+  _179 = B_46(D) + _47;
+  _180 = (float) _178;
+  *_179 = _180;
+  i_182 = tmp.8_127 + 2;
+  if (end_idx_44 >= i_182)
+    goto <bb 12>; [89.00%]
+  else
+    goto <bb 14>; [11.00%]
+
+  <bb 12> [local count: 49959011]:
+  _106 = i_182 w* 4;
+  _107 = _106 + 18446744073709551612;
+  _108 = A_45(D) + _107;
+  _109 = *_108;
+  _110 = A_45(D) + _106;
+  _111 = *_110;
+  _112 = _109 + _111;
+  _114 = _106 + 4;
+  _115 = A_45(D) + _114;
+  _116 = *_115;
+  _117 = _112 + _116;
+  _118 = (double) _117;
+  _119 = _118 * 3.3333000000000001517008740847813896834850311279296875e-1;
+  _120 = B_46(D) + _106;
+  _121 = (float) _119;
+  *_120 = _121;
+  goto <bb 14>; [100.00%]
+
+  <bb 13> [local count: 191126041]:
+  # ivtmp.28_183 = PHI <_93(6), ivtmp.28_184(13)>
+  _187 = A_45(D) + 18446744073709551612;
+  _68 = MEM[base: _187, index: ivtmp.28_183, step: 4, offset: 0B];
+  _66 = MEM[base: A_45(D), index: ivtmp.28_183, step: 4, offset: 0B];
+  _65 = _66 + _68;
+  _186 = A_45(D) + 4;
+  _61 = MEM[base: _186, index: ivtmp.28_183, step: 4, offset: 0B];
+  _60 = _61 + _65;
+  _59 = (double) _60;
+  _58 = _59 * 3.3333000000000001517008740847813896834850311279296875e-1;
+  _55 = (float) _58;
+  MEM[base: B_46(D), index: ivtmp.28_183, step: 4, offset: 0B] = _55;
+  ivtmp.28_184 = ivtmp.28_183 + 1;
+  i_188 = (int) ivtmp.28_184;
+  if (end_idx_44 >= i_188)
+    goto <bb 13>; [89.00%]
+  else
+    goto <bb 15>; [11.00%]
+
+  <bb 14> [local count: 84095460]:
+
+  <bb 15> [local count: 105119324]:
+
+  <bb 16> [local count: 118111601]:
+  return;
+
+}
+
+
+
+;; Function runJacobiDSP_kernel2 (runJacobiDSP_kernel2, funcdef_no=4, decl_uid=4170, cgraph_uid=5, symbol_order=10)
+
+Removing basic block 17
+Removing basic block 18
+Removing basic block 19
+Removing basic block 20
+Removing basic block 21
+Removing basic block 22
+Removing basic block 23
+Removing basic block 24
+__attribute__((section (".global")))
+runJacobiDSP_kernel2 (int n, float * A, float * B)
+{
+  sizetype ivtmp.73;
+  sizetype ivtmp.62;
+  vector(4) float vect__15.57;
+  int tmp.54;
+  unsigned int niters_vector_mult_vf.53;
+  unsigned int bnd.52;
+  unsigned int niters.51;
+  int i;
+  int end_idx;
+  int start_idx;
+  int remainder;
+  int elements_per_thread;
+  int total_threads;
+  int thread_id;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  int _5;
+  int _6;
+  int _7;
+  int _8;
+  int _9;
+  int _10;
+  long unsigned int _13;
+  float * _14;
+  float * _15;
+  long unsigned int _18;
+  float _36;
+  float * _38;
+  sizetype _39;
+  sizetype _40;
+  sizetype _42;
+  _Bool _43;
+  unsigned int _45;
+  unsigned int _46;
+  unsigned int _47;
+  float * _51;
+  _Bool _52;
+  float * _56;
+  long unsigned int _58;
+  float * _59;
+  _Bool _60;
+  _Bool _61;
+  _Bool _62;
+  long unsigned int slsr_65;
+  long unsigned int slsr_67;
+  float _69;
+  float * _81;
+  float * _82;
+  float _83;
+  int _90;
+  float * _107;
+  float * _108;
+  float _109;
+  sizetype _119;
+
+  <bb 2> [local count: 118111600]:
+  thread_id_22 = get_thread_id ();
+  total_threads_24 = get_group_size ();
+  _1 = n_25(D) + -2;
+  elements_per_thread_26 = _1 / total_threads_24;
+  remainder_27 = _1 % total_threads_24;
+  if (thread_id_22 < remainder_27)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 59055800]:
+  _2 = elements_per_thread_26 + 1;
+  _3 = _2 * thread_id_22;
+  start_idx_29 = _3 + 1;
+  end_idx_31 = elements_per_thread_26 + start_idx_29;
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 59055800]:
+  _4 = elements_per_thread_26 + 1;
+  _5 = _4 * remainder_27;
+  _6 = thread_id_22 - remainder_27;
+  _7 = _6 * elements_per_thread_26;
+  _8 = _5 + _7;
+  start_idx_28 = _8 + 1;
+  _9 = elements_per_thread_26 + start_idx_28;
+  end_idx_30 = _9 + -1;
+
+  <bb 5> [local count: 118111600]:
+  # end_idx_17 = PHI <end_idx_31(3), end_idx_30(4)>
+  # start_idx_44 = PHI <start_idx_29(3), start_idx_28(4)>
+  _10 = n_25(D) + -1;
+  end_idx_32 = MIN_EXPR <_10, end_idx_17>;
+  if (end_idx_32 >= start_idx_44)
+    goto <bb 6>; [89.00%]
+  else
+    goto <bb 16>; [11.00%]
+
+  <bb 6> [local count: 105119324]:
+  _47 = (unsigned int) end_idx_32;
+  _46 = (unsigned int) start_idx_44;
+  _45 = _47 - _46;
+  _43 = _45 > 7;
+  _42 = (sizetype) start_idx_44;
+  _40 = _42 + 4;
+  _39 = _40 * 4;
+  _38 = B_33(D) + _39;
+  _18 = _39 + 18446744073709551600;
+  _51 = A_34(D) + _18;
+  _52 = _38 <= _51;
+  _56 = A_34(D) + _39;
+  _58 = _39 + 18446744073709551600;
+  _59 = B_33(D) + _58;
+  _60 = _56 <= _59;
+  _61 = _52 | _60;
+  _62 = _43 & _61;
+  if (_62 != 0)
+    goto <bb 7>; [80.00%]
+  else
+    goto <bb 13>; [20.00%]
+
+  <bb 7> [local count: 84095460]:
+  niters.51_73 = _45 + 1;
+  bnd.52_87 = niters.51_73 >> 2;
+  _119 = bnd.52_87 w* 16;
+
+  <bb 8> [local count: 504572758]:
+  # ivtmp.73_116 = PHI <0(7), ivtmp.73_117(8)>
+  vect__15.57_97 = MEM[base: _59, index: ivtmp.73_116, offset: 0B];
+  MEM[base: _51, index: ivtmp.73_116, offset: 0B] = vect__15.57_97;
+  ivtmp.73_117 = ivtmp.73_116 + 16;
+  if (ivtmp.73_117 != _119)
+    goto <bb 8>; [83.33%]
+  else
+    goto <bb 9>; [16.67%]
+
+  <bb 9> [local count: 84095460]:
+  niters_vector_mult_vf.53_88 = niters.51_73 & 4294967292;
+  _90 = (int) niters_vector_mult_vf.53_88;
+  tmp.54_89 = start_idx_44 + _90;
+  if (niters.51_73 == niters_vector_mult_vf.53_88)
+    goto <bb 14>; [25.00%]
+  else
+    goto <bb 10>; [75.00%]
+
+  <bb 10> [local count: 63071595]:
+  _13 = tmp.54_89 w* 4;
+  _14 = B_33(D) + _13;
+  _15 = A_34(D) + _13;
+  _36 = *_14;
+  *_15 = _36;
+  i_72 = tmp.54_89 + 1;
+  if (end_idx_32 >= i_72)
+    goto <bb 11>; [89.00%]
+  else
+    goto <bb 14>; [11.00%]
+
+  <bb 11> [local count: 56133721]:
+  slsr_65 = _13 + 4;
+  _107 = B_33(D) + slsr_65;
+  _108 = A_34(D) + slsr_65;
+  _109 = *_107;
+  *_108 = _109;
+  i_111 = tmp.54_89 + 2;
+  if (end_idx_32 >= i_111)
+    goto <bb 12>; [89.00%]
+  else
+    goto <bb 14>; [11.00%]
+
+  <bb 12> [local count: 49959012]:
+  slsr_67 = _13 + 8;
+  _81 = B_33(D) + slsr_67;
+  _82 = A_34(D) + slsr_67;
+  _83 = *_81;
+  *_82 = _83;
+  goto <bb 14>; [100.00%]
+
+  <bb 13> [local count: 191126041]:
+  # ivtmp.62_112 = PHI <_42(6), ivtmp.62_113(13)>
+  _69 = MEM[base: B_33(D), index: ivtmp.62_112, step: 4, offset: 0B];
+  MEM[base: A_34(D), index: ivtmp.62_112, step: 4, offset: 0B] = _69;
+  ivtmp.62_113 = ivtmp.62_112 + 1;
+  i_115 = (int) ivtmp.62_113;
+  if (end_idx_32 >= i_115)
+    goto <bb 13>; [89.00%]
+  else
+    goto <bb 15>; [11.00%]
+
+  <bb 14> [local count: 84095460]:
+
+  <bb 15> [local count: 105119324]:
+
+  <bb 16> [local count: 118111601]:
+  return;
+
+}
+
+

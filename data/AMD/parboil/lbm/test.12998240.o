@@ -1,0 +1,30 @@
+LBM_allocateGrid: allocated 185.2 MByte
+MAIN_printInfo:
+	grid size      : 120 x 120 x 150 = 2.16 * 10^6 Cells
+	nTimeSteps     : 100
+	result file    : output.dat
+	action         : store
+	simulation type: lid-driven cavity
+	obstacle file  : /public/home/dtune/zhengh/datasets/lbm/long/input/120_120_150_ldc.of
+
+LBM_allocateGrid: allocated 185.2 MByte
+LBM_allocateGrid: allocated 185.2 MByte
+LBM_showGridStatistics:
+	nObstacleCells:  343321 nAccelCells:   26912 nFluidCells: 1789767
+	minRho:   1.0000 maxRho:   1.0000 mass: 2.160000e+06
+	minU: 0.000000e+00 maxU: 0.000000e+00
+
+timestep: 64
+LBM_allocateGrid: allocated 185.2 MByte
+LBM_showGridStatistics:
+	nObstacleCells:  343321 nAccelCells:   26912 nFluidCells: 1789767
+	minRho:   0.9347 maxRho:   1.0662 mass: 2.160000e+06
+	minU: 1.843920e-08 maxU: 2.634719e-02
+
+IO        : 0.064633
+Kernel    : 0.497188
+Copy      : 1.276161
+Driver    : 0.002160
+Compute   : 0.456449
+CPU/Kernel Overlap: 0.003523
+Timer Wall Time: 2.298033

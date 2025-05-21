@@ -1,0 +1,1 @@
+Launch params (512, 1, 1) are larger than launch bounds (256) for kernel _Z10BFS_kernelPiS_P15HIP_vector_typeIiLj2EES2_S_S_iS_ii please add __launch_bounds__ to kernel define or use --gpu-max-threads-per-block recompile program ! 
