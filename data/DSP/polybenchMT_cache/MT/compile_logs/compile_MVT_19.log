@@ -1,0 +1,120 @@
+[19] Starting compilation of MVT for 1 dataset(s)
+[19] Compiling MVT for MINI_DATASET...
+gcc -o mvt mvt.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET mvt.dev.c -o mvt.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  mvt.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o mvt.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J mvt.dev.out
+rm mvt.dev.out mvt.dev.o
+[19] Successfully compiled and copied mvt for MINI_DATASET
+[19] Starting compilation of MVT for 5 dataset(s)
+[19] Compiling MVT for MINI_DATASET...
+./compileCodes.sh: line 132: make: command not found
+[19] Error: Compilation failed for MVT with MINI_DATASET
+[19] Starting compilation of MVT for 5 dataset(s)
+[19] Compiling MVT for MINI_DATASET...
+gcc -o mvt mvt.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET mvt.dev.c -o mvt.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  mvt.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o mvt.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J mvt.dev.out
+rm mvt.dev.out mvt.dev.o
+[19] Successfully compiled and copied mvt for MINI_DATASET
+[19] Compiling MVT for SMALL_DATASET...
+gcc -o mvt mvt.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DSMALL_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DSMALL_DATASET mvt.dev.c -o mvt.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  mvt.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o mvt.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J mvt.dev.out
+rm mvt.dev.out mvt.dev.o
+[19] Successfully compiled and copied mvt for SMALL_DATASET
+[19] Compiling MVT for STANDARD_DATASET...
+gcc -o mvt mvt.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include   -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable   mvt.dev.c -o mvt.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  mvt.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o mvt.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J mvt.dev.out
+rm mvt.dev.out mvt.dev.o
+[19] Successfully compiled and copied mvt for STANDARD_DATASET
+[19] Compiling MVT for LARGE_DATASET...
+gcc -o mvt mvt.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DLARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DLARGE_DATASET mvt.dev.c -o mvt.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  mvt.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o mvt.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J mvt.dev.out
+rm mvt.dev.out mvt.dev.o
+[19] Successfully compiled and copied mvt for LARGE_DATASET
+[19] Compiling MVT for EXTRALARGE_DATASET...
+gcc -o mvt mvt.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DEXTRALARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DEXTRALARGE_DATASET mvt.dev.c -o mvt.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  mvt.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o mvt.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J mvt.dev.out
+rm mvt.dev.out mvt.dev.o
+[19] Successfully compiled and copied mvt for EXTRALARGE_DATASET
+[19] Starting compilation of MVT for 5 dataset(s)
+[19] Compiling MVT for MINI_DATASET...
+gcc -o mvt mvt.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET mvt.dev.c -o mvt.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  mvt.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o mvt.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J mvt.dev.out
+rm mvt.dev.out mvt.dev.o
+[19] Successfully compiled and copied mvt for MINI_DATASET
+[19] Compiling MVT for SMALL_DATASET...
+gcc -o mvt mvt.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DSMALL_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DSMALL_DATASET mvt.dev.c -o mvt.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  mvt.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o mvt.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J mvt.dev.out
+rm mvt.dev.out mvt.dev.o
+[19] Successfully compiled and copied mvt for SMALL_DATASET
+[19] Compiling MVT for STANDARD_DATASET...
+gcc -o mvt mvt.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include   -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable   mvt.dev.c -o mvt.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  mvt.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o mvt.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J mvt.dev.out
+rm mvt.dev.out mvt.dev.o
+[19] Successfully compiled and copied mvt for STANDARD_DATASET
+[19] Compiling MVT for LARGE_DATASET...
+gcc -o mvt mvt.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DLARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DLARGE_DATASET mvt.dev.c -o mvt.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  mvt.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o mvt.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J mvt.dev.out
+rm mvt.dev.out mvt.dev.o
+[19] Successfully compiled and copied mvt for LARGE_DATASET
+[19] Compiling MVT for EXTRALARGE_DATASET...
+gcc -o mvt mvt.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DEXTRALARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DEXTRALARGE_DATASET mvt.dev.c -o mvt.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  mvt.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o mvt.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J mvt.dev.out
+rm mvt.dev.out mvt.dev.o
+[19] Successfully compiled and copied mvt for EXTRALARGE_DATASET
+[19] Starting compilation of MVT for 5 dataset(s)
+[19] Compiling MVT for MINI_DATASET...
+gcc -o mvt mvt.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET mvt.dev.c -o mvt.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  mvt.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o mvt.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J mvt.dev.out
+rm mvt.dev.out mvt.dev.o
+[19] Successfully compiled and copied mvt for MINI_DATASET
+[19] Compiling MVT for SMALL_DATASET...
+gcc -o mvt mvt.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DSMALL_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DSMALL_DATASET mvt.dev.c -o mvt.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  mvt.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o mvt.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J mvt.dev.out
+rm mvt.dev.out mvt.dev.o
+[19] Successfully compiled and copied mvt for SMALL_DATASET
+[19] Compiling MVT for STANDARD_DATASET...
+gcc -o mvt mvt.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include   -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable   mvt.dev.c -o mvt.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  mvt.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o mvt.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J mvt.dev.out
+rm mvt.dev.out mvt.dev.o
+[19] Successfully compiled and copied mvt for STANDARD_DATASET
+[19] Compiling MVT for LARGE_DATASET...
+gcc -o mvt mvt.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DLARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DLARGE_DATASET mvt.dev.c -o mvt.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  mvt.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o mvt.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J mvt.dev.out
+rm mvt.dev.out mvt.dev.o
+[19] Successfully compiled and copied mvt for LARGE_DATASET
+[19] Compiling MVT for EXTRALARGE_DATASET...
+gcc -o mvt mvt.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DEXTRALARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DEXTRALARGE_DATASET mvt.dev.c -o mvt.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  mvt.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o mvt.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J mvt.dev.out
+rm mvt.dev.out mvt.dev.o
+[19] Successfully compiled and copied mvt for EXTRALARGE_DATASET

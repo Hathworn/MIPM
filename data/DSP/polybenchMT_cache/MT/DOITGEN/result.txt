@@ -1,0 +1,128 @@
+执行时间: Mon 10 Mar 2025 05:45:04 PM CST
+算子名称: doitgen
+----------------------------------------
+
+### MINI 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: doitgen
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: MINI
+
+Execution Time:
+  CPU: 0.0132 seconds
+  DSP Orignal: 0.0664 seconds
+  DSP Cache: 0.0463 seconds
+
+Speedup CPU: 0.29x
+Speedup Orignal: 1.44x
+--------------------------------------------------
+----------------------------------------
+
+### SMALL 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: doitgen
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: SMALL
+
+Execution Time:
+  CPU: 0.1887 seconds
+  DSP Orignal: 0.4557 seconds
+  DSP Cache: 0.1267 seconds
+
+Speedup CPU: 1.49x
+Speedup Orignal: 3.60x
+--------------------------------------------------
+----------------------------------------
+
+### STANDARD 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: doitgen
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: STANDARD
+
+Execution Time:
+  CPU: 3.3542 seconds
+  DSP Orignal: 8.0544 seconds
+  DSP Cache: 0.5670 seconds
+
+Speedup CPU: 5.92x
+Speedup Orignal: 14.21x
+--------------------------------------------------
+----------------------------------------
+
+### LARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: doitgen
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: LARGE
+
+Execution Time:
+  CPU: 83.3290 seconds
+  DSP Orignal: 144.4437 seconds
+  DSP Cache: 6.0838 seconds
+
+Speedup CPU: 13.70x
+Speedup Orignal: 23.74x
+--------------------------------------------------
+----------------------------------------
+
+### EXTRALARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 134213435 (100.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 134213435 (100.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 134213435 (100.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 134213435 (100.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 134213435 (100.00%)
+
+-------------- Performance Report --------------
+Function Name: doitgen
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: EXTRALARGE
+
+Execution Time:
+  CPU: 5865.3034 seconds
+  DSP Orignal: 2130.4832 seconds
+  DSP Cache: 237.0703 seconds
+
+Speedup CPU: 24.74x
+Speedup Orignal: 8.99x
+--------------------------------------------------
+----------------------------------------

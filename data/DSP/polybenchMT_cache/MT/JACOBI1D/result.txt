@@ -1,0 +1,108 @@
+执行时间: Sun 09 Mar 2025 01:50:03 PM CST
+算子名称: jacobi1D
+----------------------------------------
+
+### MINI 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: jacobi1D
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: MINI
+
+Execution Time:
+  CPU: 0.1545 seconds
+  DSP Orignal: 15.2473 seconds
+  DSP Cache: 14.3911 seconds
+
+Speedup CPU: 0.01x
+Speedup Orignal: 1.06x
+--------------------------------------------------
+----------------------------------------
+
+### SMALL 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: jacobi1D
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: SMALL
+
+Execution Time:
+  CPU: 0.3083 seconds
+  DSP Orignal: 15.9824 seconds
+  DSP Cache: 14.7571 seconds
+
+Speedup CPU: 0.02x
+Speedup Orignal: 1.08x
+--------------------------------------------------
+----------------------------------------
+
+### STANDARD 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: jacobi1D
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: STANDARD
+
+Execution Time:
+  CPU: 0.6500 seconds
+  DSP Orignal: 16.1732 seconds
+  DSP Cache: 14.6586 seconds
+
+Speedup CPU: 0.04x
+Speedup Orignal: 1.10x
+--------------------------------------------------
+----------------------------------------
+
+### LARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: jacobi1D
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: LARGE
+
+Execution Time:
+  CPU: 1.2448 seconds
+  DSP Orignal: 18.9616 seconds
+  DSP Cache: 14.7654 seconds
+
+Speedup CPU: 0.08x
+Speedup Orignal: 1.28x
+--------------------------------------------------
+----------------------------------------
+
+### EXTRALARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: jacobi1D
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: EXTRALARGE
+
+Execution Time:
+  CPU: 2.4865 seconds
+  DSP Orignal: 21.3325 seconds
+  DSP Cache: 14.8149 seconds
+
+Speedup CPU: 0.17x
+Speedup Orignal: 1.44x
+--------------------------------------------------
+----------------------------------------

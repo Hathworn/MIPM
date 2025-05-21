@@ -1,0 +1,128 @@
+执行时间: Tue 11 Mar 2025 10:41:03 PM CST
+算子名称: adi
+----------------------------------------
+
+### MINI 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 8 (0.01%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 8 (0.01%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 8 (0.01%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 8 (0.01%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 8 (0.01%)
+
+-------------- Performance Report --------------
+Function Name: ADI
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: MINI
+
+Execution Time:
+  CPU: 0.0107 seconds
+  DSP Orignal: 0.4435 seconds
+  DSP Cache: 0.4345 seconds
+
+Speedup CPU: 0.02x
+Speedup Orignal: 1.02x
+--------------------------------------------------
+----------------------------------------
+
+### SMALL 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 1491 (0.28%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 1491 (0.28%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 1491 (0.28%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 1490 (0.28%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 1490 (0.28%)
+
+-------------- Performance Report --------------
+Function Name: ADI
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: SMALL
+
+Execution Time:
+  CPU: 0.0478 seconds
+  DSP Orignal: 0.9290 seconds
+  DSP Cache: 0.8508 seconds
+
+Speedup CPU: 0.06x
+Speedup Orignal: 1.09x
+--------------------------------------------------
+----------------------------------------
+
+### STANDARD 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 3032 (0.14%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 3032 (0.14%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 3032 (0.14%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 3032 (0.14%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 3032 (0.14%)
+
+-------------- Performance Report --------------
+Function Name: ADI
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: STANDARD
+
+Execution Time:
+  CPU: 0.1967 seconds
+  DSP Orignal: 1.9251 seconds
+  DSP Cache: 1.7458 seconds
+
+Speedup CPU: 0.11x
+Speedup Orignal: 1.10x
+--------------------------------------------------
+----------------------------------------
+
+### LARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 6107 (0.07%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 6107 (0.07%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 6107 (0.07%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 6107 (0.07%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 6107 (0.07%)
+
+-------------- Performance Report --------------
+Function Name: ADI
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: LARGE
+
+Execution Time:
+  CPU: 0.7761 seconds
+  DSP Orignal: 4.5831 seconds
+  DSP Cache: 3.6197 seconds
+
+Speedup CPU: 0.21x
+Speedup Orignal: 1.27x
+--------------------------------------------------
+----------------------------------------
+
+### EXTRALARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 12226 (0.04%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 12226 (0.04%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 12226 (0.04%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 12226 (0.04%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 2.50 Percent: 12226 (0.04%)
+
+-------------- Performance Report --------------
+Function Name: ADI
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: EXTRALARGE
+
+Execution Time:
+  CPU: 4.3458 seconds
+  DSP Orignal: 11.1159 seconds
+  DSP Cache: 7.4348 seconds
+
+Speedup CPU: 0.58x
+Speedup Orignal: 1.50x
+--------------------------------------------------
+----------------------------------------

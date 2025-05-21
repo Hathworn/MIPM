@@ -1,0 +1,128 @@
+执行时间: Tue 11 Mar 2025 01:48:44 PM CST
+算子名称: gesummv
+----------------------------------------
+
+### MINI 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: gesummv_kernel
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: MINI
+
+Execution Time:
+  CPU: 0.0157 seconds
+  DSP Orignal: 0.0451 seconds
+  DSP Cache: 0.0027 seconds
+
+Speedup CPU: 5.87x
+Speedup Orignal: 16.85x
+--------------------------------------------------
+----------------------------------------
+
+### SMALL 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: gesummv_kernel
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: SMALL
+
+Execution Time:
+  CPU: 0.0800 seconds
+  DSP Orignal: 0.1803 seconds
+  DSP Cache: 0.0071 seconds
+
+Speedup CPU: 11.20x
+Speedup Orignal: 25.24x
+--------------------------------------------------
+----------------------------------------
+
+### STANDARD 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: gesummv_kernel
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: STANDARD
+
+Execution Time:
+  CPU: 0.5396 seconds
+  DSP Orignal: 0.7117 seconds
+  DSP Cache: 0.0217 seconds
+
+Speedup CPU: 24.82x
+Speedup Orignal: 32.74x
+--------------------------------------------------
+----------------------------------------
+
+### LARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: gesummv_kernel
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: LARGE
+
+Execution Time:
+  CPU: 3.2711 seconds
+  DSP Orignal: 3.1043 seconds
+  DSP Cache: 0.0837 seconds
+
+Speedup CPU: 39.10x
+Speedup Orignal: 37.11x
+--------------------------------------------------
+----------------------------------------
+
+### EXTRALARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: gesummv_kernel
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: EXTRALARGE
+
+Execution Time:
+  CPU: 12.7011 seconds
+  DSP Orignal: 13.3341 seconds
+  DSP Cache: 0.4649 seconds
+
+Speedup CPU: 27.32x
+Speedup Orignal: 28.68x
+--------------------------------------------------
+----------------------------------------

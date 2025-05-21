@@ -1,0 +1,128 @@
+执行时间: Tue 11 Mar 2025 02:34:30 PM CST
+算子名称: gramschmidt
+----------------------------------------
+
+### MINI 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: gramschmidt_kernel
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: MINI
+
+Execution Time:
+  CPU: 80.0799 seconds
+  DSP Orignal: 25.6842 seconds
+  DSP Cache: 21.6351 seconds
+
+Speedup CPU: 3.70x
+Speedup Orignal: 1.19x
+--------------------------------------------------
+----------------------------------------
+
+### SMALL 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: gramschmidt_kernel
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: SMALL
+
+Execution Time:
+  CPU: 37.0461 seconds
+  DSP Orignal: 45.4076 seconds
+  DSP Cache: 38.0925 seconds
+
+Speedup CPU: 0.97x
+Speedup Orignal: 1.19x
+--------------------------------------------------
+----------------------------------------
+
+### STANDARD 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: gramschmidt_kernel
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: STANDARD
+
+Execution Time:
+  CPU: 243.1461 seconds
+  DSP Orignal: 73.2554 seconds
+  DSP Cache: 61.1757 seconds
+
+Speedup CPU: 3.97x
+Speedup Orignal: 1.20x
+--------------------------------------------------
+----------------------------------------
+
+### LARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: gramschmidt_kernel
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: LARGE
+
+Execution Time:
+  CPU: 166.8176 seconds
+  DSP Orignal: 115.2563 seconds
+  DSP Cache: 93.7081 seconds
+
+Speedup CPU: 1.78x
+Speedup Orignal: 1.23x
+--------------------------------------------------
+----------------------------------------
+
+### EXTRALARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: gramschmidt_kernel
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: EXTRALARGE
+
+Execution Time:
+  CPU: 706.0183 seconds
+  DSP Orignal: 157.1136 seconds
+  DSP Cache: 134.9611 seconds
+
+Speedup CPU: 5.23x
+Speedup Orignal: 1.16x
+--------------------------------------------------
+----------------------------------------

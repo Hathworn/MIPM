@@ -1,0 +1,126 @@
+执行时间: Wed 12 Mar 2025 04:25:50 PM CST
+算子名称: syr2k
+----------------------------------------
+
+### MINI 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: syr2k_kernel_cache
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: MINI
+
+Execution Time:
+  CPU: 0.0404 seconds
+  DSP Orignal: 0.0645 seconds
+  DSP Cache: 0.0358 seconds
+
+Speedup CPU: 1.13x
+Speedup Orignal: 1.80x
+--------------------------------------------------
+----------------------------------------
+
+### SMALL 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: syr2k_kernel_cache
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: SMALL
+
+Execution Time:
+  CPU: 0.3569 seconds
+  DSP Orignal: 1.0471 seconds
+  DSP Cache: 0.2849 seconds
+
+Speedup CPU: 1.25x
+Speedup Orignal: 3.67x
+--------------------------------------------------
+----------------------------------------
+
+### STANDARD 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: syr2k_kernel_cache
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: STANDARD
+
+Execution Time:
+  CPU: 3.0727 seconds
+  DSP Orignal: 8.4314 seconds
+  DSP Cache: 3.4985 seconds
+
+Speedup CPU: 0.88x
+Speedup Orignal: 2.41x
+--------------------------------------------------
+----------------------------------------
+
+### LARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: syr2k_kernel_cache
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: LARGE
+
+Execution Time:
+  CPU: 31.8033 seconds
+  DSP Orignal: 55.7989 seconds
+  DSP Cache: 50.8940 seconds
+
+Speedup CPU: 0.62x
+Speedup Orignal: 1.10x
+--------------------------------------------------
+----------------------------------------
+Checking clusterId 0...                                                                                                                                     
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%) 
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%) 
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%) 
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%) 
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%) 
+
+-------------- Performance Report --------------
+Function Name: syr2k_kernel_cache
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: EXTRALARGE
+
+Execution Time:
+  CPU: 719.4860 seconds
+  DSP Orignal: 403.1211 seconds
+  DSP Cache: 777.2079 seconds
+
+Speedup CPU: 0.93x
+Speedup Orignal: 0.52x
+--------------------------------------------------
+----------------------------------------

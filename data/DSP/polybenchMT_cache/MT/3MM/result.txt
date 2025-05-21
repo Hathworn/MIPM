@@ -1,0 +1,128 @@
+执行时间: Sun 09 Mar 2025 06:13:12 PM CST
+算子名称: 3mm
+----------------------------------------
+
+### MINI 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: 3mm
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: MINI
+
+Execution Time:
+  CPU: 5.3217 seconds
+  DSP Orignal: 6.3789 seconds
+  DSP Cache: 3.2979 seconds
+
+Speedup CPU: 1.61x
+Speedup Orignal: 1.93x
+--------------------------------------------------
+----------------------------------------
+
+### SMALL 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 261632 (99.80%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 259017 (98.81%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 258584 (98.64%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 259089 (98.83%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 258500 (98.61%)
+
+-------------- Performance Report --------------
+Function Name: 3mm
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: SMALL
+
+Execution Time:
+  CPU: 33.5533 seconds
+  DSP Orignal: 14.8793 seconds
+  DSP Cache: 7.8060 seconds
+
+Speedup CPU: 4.30x
+Speedup Orignal: 1.91x
+--------------------------------------------------
+----------------------------------------
+
+### STANDARD 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 407040 (99.38%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 51270 (12.52%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 188606 (46.05%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 26986 (6.59%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 403413 (98.49%)
+
+-------------- Performance Report --------------
+Function Name: 3mm
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: STANDARD
+
+Execution Time:
+  CPU: 49.6056 seconds
+  DSP Orignal: 30.8482 seconds
+  DSP Cache: 16.2691 seconds
+
+Speedup CPU: 3.05x
+Speedup Orignal: 1.90x
+--------------------------------------------------
+----------------------------------------
+
+### LARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: 3mm
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: LARGE
+
+Execution Time:
+  CPU: 114.3494 seconds
+  DSP Orignal: 59.5904 seconds
+  DSP Cache: 28.1254 seconds
+
+Speedup CPU: 4.07x
+Speedup Orignal: 2.12x
+--------------------------------------------------
+----------------------------------------
+
+### EXTRALARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 649099 (80.85%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 29744 (3.70%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 797034 (99.28%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 800189 (99.67%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 796668 (99.23%)
+
+-------------- Performance Report --------------
+Function Name: 3mm
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: EXTRALARGE
+
+Execution Time:
+  CPU: 178.5770 seconds
+  DSP Orignal: 86.2847 seconds
+  DSP Cache: 44.6115 seconds
+
+Speedup CPU: 4.00x
+Speedup Orignal: 1.93x
+--------------------------------------------------
+----------------------------------------

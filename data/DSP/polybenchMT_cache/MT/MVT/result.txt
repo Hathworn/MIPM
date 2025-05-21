@@ -1,0 +1,128 @@
+执行时间: Tue 11 Mar 2025 09:03:24 PM CST
+算子名称: mvt
+----------------------------------------
+
+### MINI 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 32 (3.12%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 22 (2.15%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 28 (2.73%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 24 (2.34%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 24 (2.34%)
+
+-------------- Performance Report --------------
+Function Name: mvt_kernel
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: MINI
+
+Execution Time:
+  CPU: 0.1245 seconds
+  DSP Orignal: 0.0481 seconds
+  DSP Cache: 0.0097 seconds
+
+Speedup CPU: 12.86x
+Speedup Orignal: 4.97x
+--------------------------------------------------
+----------------------------------------
+
+### SMALL 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 26 (1.27%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 22 (1.07%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 22 (1.07%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 20 (0.98%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 20 (0.98%)
+
+-------------- Performance Report --------------
+Function Name: mvt_kernel
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: SMALL
+
+Execution Time:
+  CPU: 0.5896 seconds
+  DSP Orignal: 0.1705 seconds
+  DSP Cache: 0.0331 seconds
+
+Speedup CPU: 17.84x
+Speedup Orignal: 5.16x
+--------------------------------------------------
+----------------------------------------
+
+### STANDARD 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 28 (0.68%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 30 (0.73%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 22 (0.54%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 30 (0.73%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 32 (0.78%)
+
+-------------- Performance Report --------------
+Function Name: mvt_kernel
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: STANDARD
+
+Execution Time:
+  CPU: 2.2249 seconds
+  DSP Orignal: 0.7035 seconds
+  DSP Cache: 0.1261 seconds
+
+Speedup CPU: 17.64x
+Speedup Orignal: 5.58x
+--------------------------------------------------
+----------------------------------------
+
+### LARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 24 (0.29%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 22 (0.27%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 26 (0.32%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 22 (0.27%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 22 (0.27%)
+
+-------------- Performance Report --------------
+Function Name: mvt_kernel
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: LARGE
+
+Execution Time:
+  CPU: 12.0269 seconds
+  DSP Orignal: 2.9701 seconds
+  DSP Cache: 0.2978 seconds
+
+Speedup CPU: 40.39x
+Speedup Orignal: 9.97x
+--------------------------------------------------
+----------------------------------------
+
+### EXTRALARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 12 (0.07%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 12 (0.07%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 12 (0.07%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 12 (0.07%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 12 (0.07%)
+
+-------------- Performance Report --------------
+Function Name: mvt_kernel
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: EXTRALARGE
+
+Execution Time:
+  CPU: 58.9918 seconds
+  DSP Orignal: 11.2463 seconds
+  DSP Cache: 0.4904 seconds
+
+Speedup CPU: 120.29x
+Speedup Orignal: 22.93x
+--------------------------------------------------
+----------------------------------------

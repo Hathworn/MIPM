@@ -1,0 +1,120 @@
+[21] Starting compilation of SYRK for 1 dataset(s)
+[21] Compiling SYRK for MINI_DATASET...
+gcc -o syrk syrk.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET syrk.dev.c -o syrk.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  syrk.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o syrk.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J syrk.dev.out
+rm syrk.dev.o syrk.dev.out
+[21] Successfully compiled and copied syrk for MINI_DATASET
+[21] Starting compilation of SYRK for 5 dataset(s)
+[21] Compiling SYRK for MINI_DATASET...
+./compileCodes.sh: line 132: make: command not found
+[21] Error: Compilation failed for SYRK with MINI_DATASET
+[21] Starting compilation of SYRK for 5 dataset(s)
+[21] Compiling SYRK for MINI_DATASET...
+gcc -o syrk syrk.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET syrk.dev.c -o syrk.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  syrk.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o syrk.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J syrk.dev.out
+rm syrk.dev.o syrk.dev.out
+[21] Successfully compiled and copied syrk for MINI_DATASET
+[21] Compiling SYRK for SMALL_DATASET...
+gcc -o syrk syrk.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DSMALL_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DSMALL_DATASET syrk.dev.c -o syrk.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  syrk.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o syrk.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J syrk.dev.out
+rm syrk.dev.o syrk.dev.out
+[21] Successfully compiled and copied syrk for SMALL_DATASET
+[21] Compiling SYRK for STANDARD_DATASET...
+gcc -o syrk syrk.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include   -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable   syrk.dev.c -o syrk.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  syrk.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o syrk.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J syrk.dev.out
+rm syrk.dev.o syrk.dev.out
+[21] Successfully compiled and copied syrk for STANDARD_DATASET
+[21] Compiling SYRK for LARGE_DATASET...
+gcc -o syrk syrk.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DLARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DLARGE_DATASET syrk.dev.c -o syrk.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  syrk.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o syrk.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J syrk.dev.out
+rm syrk.dev.o syrk.dev.out
+[21] Successfully compiled and copied syrk for LARGE_DATASET
+[21] Compiling SYRK for EXTRALARGE_DATASET...
+gcc -o syrk syrk.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DEXTRALARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DEXTRALARGE_DATASET syrk.dev.c -o syrk.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  syrk.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o syrk.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J syrk.dev.out
+rm syrk.dev.o syrk.dev.out
+[21] Successfully compiled and copied syrk for EXTRALARGE_DATASET
+[21] Starting compilation of SYRK for 5 dataset(s)
+[21] Compiling SYRK for MINI_DATASET...
+gcc -o syrk syrk.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET syrk.dev.c -o syrk.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  syrk.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o syrk.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J syrk.dev.out
+rm syrk.dev.o syrk.dev.out
+[21] Successfully compiled and copied syrk for MINI_DATASET
+[21] Compiling SYRK for SMALL_DATASET...
+gcc -o syrk syrk.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DSMALL_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DSMALL_DATASET syrk.dev.c -o syrk.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  syrk.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o syrk.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J syrk.dev.out
+rm syrk.dev.o syrk.dev.out
+[21] Successfully compiled and copied syrk for SMALL_DATASET
+[21] Compiling SYRK for STANDARD_DATASET...
+gcc -o syrk syrk.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include   -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable   syrk.dev.c -o syrk.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  syrk.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o syrk.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J syrk.dev.out
+rm syrk.dev.o syrk.dev.out
+[21] Successfully compiled and copied syrk for STANDARD_DATASET
+[21] Compiling SYRK for LARGE_DATASET...
+gcc -o syrk syrk.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DLARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DLARGE_DATASET syrk.dev.c -o syrk.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  syrk.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o syrk.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J syrk.dev.out
+rm syrk.dev.o syrk.dev.out
+[21] Successfully compiled and copied syrk for LARGE_DATASET
+[21] Compiling SYRK for EXTRALARGE_DATASET...
+gcc -o syrk syrk.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DEXTRALARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DEXTRALARGE_DATASET syrk.dev.c -o syrk.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  syrk.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o syrk.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J syrk.dev.out
+rm syrk.dev.o syrk.dev.out
+[21] Successfully compiled and copied syrk for EXTRALARGE_DATASET
+[21] Starting compilation of SYRK for 5 dataset(s)
+[21] Compiling SYRK for MINI_DATASET...
+gcc -o syrk syrk.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET syrk.dev.c -o syrk.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  syrk.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o syrk.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J syrk.dev.out
+rm syrk.dev.o syrk.dev.out
+[21] Successfully compiled and copied syrk for MINI_DATASET
+[21] Compiling SYRK for SMALL_DATASET...
+gcc -o syrk syrk.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DSMALL_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DSMALL_DATASET syrk.dev.c -o syrk.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  syrk.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o syrk.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J syrk.dev.out
+rm syrk.dev.o syrk.dev.out
+[21] Successfully compiled and copied syrk for SMALL_DATASET
+[21] Compiling SYRK for STANDARD_DATASET...
+gcc -o syrk syrk.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include   -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable   syrk.dev.c -o syrk.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  syrk.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o syrk.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J syrk.dev.out
+rm syrk.dev.o syrk.dev.out
+[21] Successfully compiled and copied syrk for STANDARD_DATASET
+[21] Compiling SYRK for LARGE_DATASET...
+gcc -o syrk syrk.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DLARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DLARGE_DATASET syrk.dev.c -o syrk.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  syrk.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o syrk.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J syrk.dev.out
+rm syrk.dev.o syrk.dev.out
+[21] Successfully compiled and copied syrk for LARGE_DATASET
+[21] Compiling SYRK for EXTRALARGE_DATASET...
+gcc -o syrk syrk.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DEXTRALARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DEXTRALARGE_DATASET syrk.dev.c -o syrk.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  syrk.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o syrk.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J syrk.dev.out
+rm syrk.dev.o syrk.dev.out
+[21] Successfully compiled and copied syrk for EXTRALARGE_DATASET

@@ -1,0 +1,120 @@
+[2] Starting compilation of 2MM for 1 dataset(s)
+[2] Compiling 2MM for MINI_DATASET...
+gcc -o 2mm 2mm.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET 2mm.dev.c -o 2mm.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  2mm.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o 2mm.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J 2mm.dev.out
+rm 2mm.dev.o 2mm.dev.out
+[2] Successfully compiled and copied 2mm for MINI_DATASET
+[2] Starting compilation of 2MM for 5 dataset(s)
+[2] Compiling 2MM for MINI_DATASET...
+./compileCodes.sh: line 132: make: command not found
+[2] Error: Compilation failed for 2MM with MINI_DATASET
+[2] Starting compilation of 2MM for 5 dataset(s)
+[2] Compiling 2MM for MINI_DATASET...
+gcc -o 2mm 2mm.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET 2mm.dev.c -o 2mm.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  2mm.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o 2mm.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J 2mm.dev.out
+rm 2mm.dev.o 2mm.dev.out
+[2] Successfully compiled and copied 2mm for MINI_DATASET
+[2] Compiling 2MM for SMALL_DATASET...
+gcc -o 2mm 2mm.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DSMALL_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DSMALL_DATASET 2mm.dev.c -o 2mm.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  2mm.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o 2mm.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J 2mm.dev.out
+rm 2mm.dev.o 2mm.dev.out
+[2] Successfully compiled and copied 2mm for SMALL_DATASET
+[2] Compiling 2MM for STANDARD_DATASET...
+gcc -o 2mm 2mm.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include   -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable   2mm.dev.c -o 2mm.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  2mm.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o 2mm.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J 2mm.dev.out
+rm 2mm.dev.o 2mm.dev.out
+[2] Successfully compiled and copied 2mm for STANDARD_DATASET
+[2] Compiling 2MM for LARGE_DATASET...
+gcc -o 2mm 2mm.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DLARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DLARGE_DATASET 2mm.dev.c -o 2mm.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  2mm.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o 2mm.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J 2mm.dev.out
+rm 2mm.dev.o 2mm.dev.out
+[2] Successfully compiled and copied 2mm for LARGE_DATASET
+[2] Compiling 2MM for EXTRALARGE_DATASET...
+gcc -o 2mm 2mm.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DEXTRALARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DEXTRALARGE_DATASET 2mm.dev.c -o 2mm.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  2mm.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o 2mm.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J 2mm.dev.out
+rm 2mm.dev.o 2mm.dev.out
+[2] Successfully compiled and copied 2mm for EXTRALARGE_DATASET
+[2] Starting compilation of 2MM for 5 dataset(s)
+[2] Compiling 2MM for MINI_DATASET...
+gcc -o 2mm 2mm.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET 2mm.dev.c -o 2mm.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  2mm.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o 2mm.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J 2mm.dev.out
+rm 2mm.dev.o 2mm.dev.out
+[2] Successfully compiled and copied 2mm for MINI_DATASET
+[2] Compiling 2MM for SMALL_DATASET...
+gcc -o 2mm 2mm.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DSMALL_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DSMALL_DATASET 2mm.dev.c -o 2mm.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  2mm.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o 2mm.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J 2mm.dev.out
+rm 2mm.dev.o 2mm.dev.out
+[2] Successfully compiled and copied 2mm for SMALL_DATASET
+[2] Compiling 2MM for STANDARD_DATASET...
+gcc -o 2mm 2mm.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include   -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable   2mm.dev.c -o 2mm.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  2mm.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o 2mm.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J 2mm.dev.out
+rm 2mm.dev.o 2mm.dev.out
+[2] Successfully compiled and copied 2mm for STANDARD_DATASET
+[2] Compiling 2MM for LARGE_DATASET...
+gcc -o 2mm 2mm.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DLARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DLARGE_DATASET 2mm.dev.c -o 2mm.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  2mm.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o 2mm.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J 2mm.dev.out
+rm 2mm.dev.o 2mm.dev.out
+[2] Successfully compiled and copied 2mm for LARGE_DATASET
+[2] Compiling 2MM for EXTRALARGE_DATASET...
+gcc -o 2mm 2mm.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DEXTRALARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DEXTRALARGE_DATASET 2mm.dev.c -o 2mm.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  2mm.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o 2mm.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J 2mm.dev.out
+rm 2mm.dev.o 2mm.dev.out
+[2] Successfully compiled and copied 2mm for EXTRALARGE_DATASET
+[2] Starting compilation of 2MM for 5 dataset(s)
+[2] Compiling 2MM for MINI_DATASET...
+gcc -o 2mm 2mm.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET 2mm.dev.c -o 2mm.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  2mm.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o 2mm.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J 2mm.dev.out
+rm 2mm.dev.o 2mm.dev.out
+[2] Successfully compiled and copied 2mm for MINI_DATASET
+[2] Compiling 2MM for SMALL_DATASET...
+gcc -o 2mm 2mm.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DSMALL_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DSMALL_DATASET 2mm.dev.c -o 2mm.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  2mm.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o 2mm.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J 2mm.dev.out
+rm 2mm.dev.o 2mm.dev.out
+[2] Successfully compiled and copied 2mm for SMALL_DATASET
+[2] Compiling 2MM for STANDARD_DATASET...
+gcc -o 2mm 2mm.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include   -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable   2mm.dev.c -o 2mm.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  2mm.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o 2mm.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J 2mm.dev.out
+rm 2mm.dev.o 2mm.dev.out
+[2] Successfully compiled and copied 2mm for STANDARD_DATASET
+[2] Compiling 2MM for LARGE_DATASET...
+gcc -o 2mm 2mm.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DLARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DLARGE_DATASET 2mm.dev.c -o 2mm.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  2mm.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o 2mm.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J 2mm.dev.out
+rm 2mm.dev.o 2mm.dev.out
+[2] Successfully compiled and copied 2mm for LARGE_DATASET
+[2] Compiling 2MM for EXTRALARGE_DATASET...
+gcc -o 2mm 2mm.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DEXTRALARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DEXTRALARGE_DATASET 2mm.dev.c -o 2mm.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  2mm.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o 2mm.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J 2mm.dev.out
+rm 2mm.dev.o 2mm.dev.out
+[2] Successfully compiled and copied 2mm for EXTRALARGE_DATASET

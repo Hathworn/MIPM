@@ -1,0 +1,120 @@
+[7] Starting compilation of BICG for 1 dataset(s)
+[7] Compiling BICG for MINI_DATASET...
+gcc -o bicg bicg.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET bicg.dev.c -o bicg.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  bicg.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o bicg.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J bicg.dev.out
+rm bicg.dev.o bicg.dev.out
+[7] Successfully compiled and copied bicg for MINI_DATASET
+[7] Starting compilation of BICG for 5 dataset(s)
+[7] Compiling BICG for MINI_DATASET...
+./compileCodes.sh: line 132: make: command not found
+[7] Error: Compilation failed for BICG with MINI_DATASET
+[7] Starting compilation of BICG for 5 dataset(s)
+[7] Compiling BICG for MINI_DATASET...
+gcc -o bicg bicg.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET bicg.dev.c -o bicg.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  bicg.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o bicg.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J bicg.dev.out
+rm bicg.dev.o bicg.dev.out
+[7] Successfully compiled and copied bicg for MINI_DATASET
+[7] Compiling BICG for SMALL_DATASET...
+gcc -o bicg bicg.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DSMALL_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DSMALL_DATASET bicg.dev.c -o bicg.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  bicg.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o bicg.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J bicg.dev.out
+rm bicg.dev.o bicg.dev.out
+[7] Successfully compiled and copied bicg for SMALL_DATASET
+[7] Compiling BICG for STANDARD_DATASET...
+gcc -o bicg bicg.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include   -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable   bicg.dev.c -o bicg.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  bicg.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o bicg.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J bicg.dev.out
+rm bicg.dev.o bicg.dev.out
+[7] Successfully compiled and copied bicg for STANDARD_DATASET
+[7] Compiling BICG for LARGE_DATASET...
+gcc -o bicg bicg.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DLARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DLARGE_DATASET bicg.dev.c -o bicg.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  bicg.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o bicg.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J bicg.dev.out
+rm bicg.dev.o bicg.dev.out
+[7] Successfully compiled and copied bicg for LARGE_DATASET
+[7] Compiling BICG for EXTRALARGE_DATASET...
+gcc -o bicg bicg.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DEXTRALARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DEXTRALARGE_DATASET bicg.dev.c -o bicg.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  bicg.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o bicg.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J bicg.dev.out
+rm bicg.dev.o bicg.dev.out
+[7] Successfully compiled and copied bicg for EXTRALARGE_DATASET
+[7] Starting compilation of BICG for 5 dataset(s)
+[7] Compiling BICG for MINI_DATASET...
+gcc -o bicg bicg.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET bicg.dev.c -o bicg.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  bicg.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o bicg.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J bicg.dev.out
+rm bicg.dev.o bicg.dev.out
+[7] Successfully compiled and copied bicg for MINI_DATASET
+[7] Compiling BICG for SMALL_DATASET...
+gcc -o bicg bicg.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DSMALL_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DSMALL_DATASET bicg.dev.c -o bicg.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  bicg.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o bicg.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J bicg.dev.out
+rm bicg.dev.o bicg.dev.out
+[7] Successfully compiled and copied bicg for SMALL_DATASET
+[7] Compiling BICG for STANDARD_DATASET...
+gcc -o bicg bicg.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include   -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable   bicg.dev.c -o bicg.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  bicg.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o bicg.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J bicg.dev.out
+rm bicg.dev.o bicg.dev.out
+[7] Successfully compiled and copied bicg for STANDARD_DATASET
+[7] Compiling BICG for LARGE_DATASET...
+gcc -o bicg bicg.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DLARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DLARGE_DATASET bicg.dev.c -o bicg.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  bicg.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o bicg.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J bicg.dev.out
+rm bicg.dev.o bicg.dev.out
+[7] Successfully compiled and copied bicg for LARGE_DATASET
+[7] Compiling BICG for EXTRALARGE_DATASET...
+gcc -o bicg bicg.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DEXTRALARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DEXTRALARGE_DATASET bicg.dev.c -o bicg.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  bicg.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o bicg.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J bicg.dev.out
+rm bicg.dev.o bicg.dev.out
+[7] Successfully compiled and copied bicg for EXTRALARGE_DATASET
+[7] Starting compilation of BICG for 5 dataset(s)
+[7] Compiling BICG for MINI_DATASET...
+gcc -o bicg bicg.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET bicg.dev.c -o bicg.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  bicg.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o bicg.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J bicg.dev.out
+rm bicg.dev.o bicg.dev.out
+[7] Successfully compiled and copied bicg for MINI_DATASET
+[7] Compiling BICG for SMALL_DATASET...
+gcc -o bicg bicg.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DSMALL_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DSMALL_DATASET bicg.dev.c -o bicg.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  bicg.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o bicg.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J bicg.dev.out
+rm bicg.dev.o bicg.dev.out
+[7] Successfully compiled and copied bicg for SMALL_DATASET
+[7] Compiling BICG for STANDARD_DATASET...
+gcc -o bicg bicg.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include   -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable   bicg.dev.c -o bicg.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  bicg.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o bicg.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J bicg.dev.out
+rm bicg.dev.o bicg.dev.out
+[7] Successfully compiled and copied bicg for STANDARD_DATASET
+[7] Compiling BICG for LARGE_DATASET...
+gcc -o bicg bicg.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DLARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DLARGE_DATASET bicg.dev.c -o bicg.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  bicg.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o bicg.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J bicg.dev.out
+rm bicg.dev.o bicg.dev.out
+[7] Successfully compiled and copied bicg for LARGE_DATASET
+[7] Compiling BICG for EXTRALARGE_DATASET...
+gcc -o bicg bicg.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DEXTRALARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DEXTRALARGE_DATASET bicg.dev.c -o bicg.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  bicg.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o bicg.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J bicg.dev.out
+rm bicg.dev.o bicg.dev.out
+[7] Successfully compiled and copied bicg for EXTRALARGE_DATASET

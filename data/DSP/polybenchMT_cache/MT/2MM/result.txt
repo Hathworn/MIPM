@@ -1,0 +1,128 @@
+执行时间: Sun 09 Mar 2025 02:46:53 PM CST
+算子名称: 2mm
+----------------------------------------
+
+### MINI 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: 2mm
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: MINI
+
+Execution Time:
+  CPU: 3.6532 seconds
+  DSP Orignal: 4.0453 seconds
+  DSP Cache: 2.0959 seconds
+
+Speedup CPU: 1.74x
+Speedup Orignal: 1.93x
+--------------------------------------------------
+----------------------------------------
+
+### SMALL 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 17434 (6.65%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 25804 (9.84%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 27990 (10.68%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 22544 (8.60%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 24587 (9.38%)
+
+-------------- Performance Report --------------
+Function Name: 2mm
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: SMALL
+
+Execution Time:
+  CPU: 24.2084 seconds
+  DSP Orignal: 9.5864 seconds
+  DSP Cache: 4.9686 seconds
+
+Speedup CPU: 4.87x
+Speedup Orignal: 1.93x
+--------------------------------------------------
+----------------------------------------
+
+### STANDARD 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 41181 (10.05%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 40980 (10.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 43949 (10.73%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 39680 (9.69%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 40496 (9.89%)
+
+-------------- Performance Report --------------
+Function Name: 2mm
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: STANDARD
+
+Execution Time:
+  CPU: 35.8172 seconds
+  DSP Orignal: 19.4071 seconds
+  DSP Cache: 10.3898 seconds
+
+Speedup CPU: 3.45x
+Speedup Orignal: 1.87x
+--------------------------------------------------
+----------------------------------------
+
+### LARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: 2mm
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: LARGE
+
+Execution Time:
+  CPU: 82.3090 seconds
+  DSP Orignal: 33.8994 seconds
+  DSP Cache: 17.9243 seconds
+
+Speedup CPU: 4.59x
+Speedup Orignal: 1.89x
+--------------------------------------------------
+----------------------------------------
+
+### EXTRALARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 46381 (5.78%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 45803 (5.71%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 42844 (5.34%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 47711 (5.94%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 0.05 Percent: 43309 (5.39%)
+
+-------------- Performance Report --------------
+Function Name: 2mm
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: EXTRALARGE
+
+Execution Time:
+  CPU: 127.8622 seconds
+  DSP Orignal: 52.9339 seconds
+  DSP Cache: 28.4760 seconds
+
+Speedup CPU: 4.49x
+Speedup Orignal: 1.86x
+--------------------------------------------------
+----------------------------------------

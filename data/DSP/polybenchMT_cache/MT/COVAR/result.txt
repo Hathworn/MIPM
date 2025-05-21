@@ -1,0 +1,128 @@
+执行时间: Mon 10 Mar 2025 01:38:22 PM CST
+算子名称: covariance
+----------------------------------------
+
+### MINI 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 71707 (27.35%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: covariance
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: MINI
+
+Execution Time:
+  CPU: 5.8096 seconds
+  DSP Orignal: 2.3169 seconds
+  DSP Cache: 1.2884 seconds
+
+Speedup CPU: 4.51x
+Speedup Orignal: 1.80x
+--------------------------------------------------
+----------------------------------------
+
+### SMALL 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 101195 (12.61%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: covariance
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: SMALL
+
+Execution Time:
+  CPU: 12.9413 seconds
+  DSP Orignal: 12.9136 seconds
+  DSP Cache: 7.1061 seconds
+
+Speedup CPU: 1.82x
+Speedup Orignal: 1.82x
+--------------------------------------------------
+----------------------------------------
+
+### STANDARD 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 125581 (7.66%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: covariance
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: STANDARD
+
+Execution Time:
+  CPU: 100.3154 seconds
+  DSP Orignal: 38.0560 seconds
+  DSP Cache: 21.0901 seconds
+
+Speedup CPU: 4.76x
+Speedup Orignal: 1.80x
+--------------------------------------------------
+----------------------------------------
+
+### LARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 141014 (5.09%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: covariance
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: LARGE
+
+Execution Time:
+  CPU: 226.2973 seconds
+  DSP Orignal: 84.9064 seconds
+  DSP Cache: 46.8806 seconds
+
+Speedup CPU: 4.83x
+Speedup Orignal: 1.81x
+--------------------------------------------------
+----------------------------------------
+
+### EXTRALARGE 数据集执行结果 ###
+Checking clusterId 0...
+Sufficient threads available on clusterId 0: available = 24, required = 24
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 145068 (3.46%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+Non-Matching CPU-DSP Outputs Beyond Error Threshold of 1.05 Percent: 0 (0.00%)
+
+-------------- Performance Report --------------
+Function Name: covariance
+Cluster ID: 0
+Number of Threads: 24
+Workload Info: EXTRALARGE
+
+Execution Time:
+  CPU: 437.2069 seconds
+  DSP Orignal: 166.6636 seconds
+  DSP Cache: 90.0492 seconds
+
+Speedup CPU: 4.86x
+Speedup Orignal: 1.85x
+--------------------------------------------------
+----------------------------------------

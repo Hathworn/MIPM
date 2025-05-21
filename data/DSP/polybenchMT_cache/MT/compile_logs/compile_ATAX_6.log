@@ -1,0 +1,96 @@
+[6] Starting compilation of ATAX for 1 dataset(s)
+[6] Compiling ATAX for MINI_DATASET...
+gcc -o atax atax.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET atax.dev.c -o atax.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  atax.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o atax.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J atax.dev.out
+rm atax.dev.o atax.dev.out
+[6] Successfully compiled and copied atax for MINI_DATASET
+[6] Starting compilation of ATAX for 5 dataset(s)
+[6] Compiling ATAX for MINI_DATASET...
+./compileCodes.sh: line 132: make: command not found
+[6] Error: Compilation failed for ATAX with MINI_DATASET
+[6] Starting compilation of ATAX for 5 dataset(s)
+[6] Compiling ATAX for MINI_DATASET...
+gcc -o atax atax.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET atax.dev.c -o atax.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  atax.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o atax.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J atax.dev.out
+rm atax.dev.o atax.dev.out
+[6] Successfully compiled and copied atax for MINI_DATASET
+[6] Compiling ATAX for SMALL_DATASET...
+gcc -o atax atax.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DSMALL_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DSMALL_DATASET atax.dev.c -o atax.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  atax.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o atax.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J atax.dev.out
+rm atax.dev.o atax.dev.out
+[6] Successfully compiled and copied atax for SMALL_DATASET
+[6] Compiling ATAX for STANDARD_DATASET...
+gcc -o atax atax.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include   -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable   atax.dev.c -o atax.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  atax.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o atax.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J atax.dev.out
+rm atax.dev.o atax.dev.out
+[6] Successfully compiled and copied atax for STANDARD_DATASET
+[6] Compiling ATAX for LARGE_DATASET...
+gcc -o atax atax.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DLARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DLARGE_DATASET atax.dev.c -o atax.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  atax.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o atax.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J atax.dev.out
+rm atax.dev.o atax.dev.out
+[6] Successfully compiled and copied atax for LARGE_DATASET
+[6] Compiling ATAX for EXTRALARGE_DATASET...
+gcc -o atax atax.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DEXTRALARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DEXTRALARGE_DATASET atax.dev.c -o atax.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  atax.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o atax.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J atax.dev.out
+rm atax.dev.o atax.dev.out
+[6] Successfully compiled and copied atax for EXTRALARGE_DATASET
+[6] Starting compilation of ATAX for 5 dataset(s)
+[6] Compiling ATAX for MINI_DATASET...
+gcc -o atax atax.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET atax.dev.c -o atax.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  atax.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o atax.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J atax.dev.out
+rm atax.dev.o atax.dev.out
+[6] Successfully compiled and copied atax for MINI_DATASET
+[6] Compiling ATAX for SMALL_DATASET...
+gcc -o atax atax.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DSMALL_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DSMALL_DATASET atax.dev.c -o atax.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  atax.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o atax.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J atax.dev.out
+rm atax.dev.o atax.dev.out
+[6] Successfully compiled and copied atax for SMALL_DATASET
+[6] Compiling ATAX for STANDARD_DATASET...
+gcc -o atax atax.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include   -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable   atax.dev.c -o atax.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  atax.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o atax.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J atax.dev.out
+rm atax.dev.o atax.dev.out
+[6] Successfully compiled and copied atax for STANDARD_DATASET
+[6] Compiling ATAX for LARGE_DATASET...
+gcc -o atax atax.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DLARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DLARGE_DATASET atax.dev.c -o atax.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  atax.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o atax.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J atax.dev.out
+rm atax.dev.o atax.dev.out
+[6] Successfully compiled and copied atax for LARGE_DATASET
+[6] Compiling ATAX for EXTRALARGE_DATASET...
+gcc -o atax atax.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DEXTRALARGE_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DEXTRALARGE_DATASET atax.dev.c -o atax.dev.o
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-ld  atax.dev.o  -L/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib  -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib --gc-sections -T/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib/dsp.lds -lhthread_device /thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/lib/slib3000.a -o atax.dev.out 
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-makedat -J atax.dev.out
+rm atax.dev.o atax.dev.out
+[6] Successfully compiled and copied atax for EXTRALARGE_DATASET
+[6] Starting compilation of ATAX for 5 dataset(s)
+[6] Compiling ATAX for MINI_DATASET...
+gcc -o atax atax.hos.c -Wall -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include  -DMINI_DATASET -Wno-unused-variable -Wno-unused-function -L/thfs3/software/programming_env/mt3000_programming_env/hthreads/lib -lhthread_host -lm -lpthread
+/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/bin/MT-3000-gcc -c -Wall -Wno-attributes -Wno-unused-function -Wno-unused-function -O2 -fenable-m3000 -ffunction-sections -flax-vector-conversions  -I/thfs3/software/programming_env/mt3000_programming_env/dsp_compiler/include  -I/thfs3/software/programming_env/mt3000_programming_env/hthreads/include -Wno-unused-variable  -DMINI_DATASET atax.dev.c -o atax.dev.o
+atax.dev.c:46:17: error: redefinition of ‘atax_kernel1’
+ __global__ void atax_kernel1(int nx, int ny, DATA_TYPE *A, DATA_TYPE *x, DATA_TYPE *tmp) {
+                 ^~~~~~~~~~~~
+atax.dev.c:6:17: note: previous definition of ‘atax_kernel1’ was here
+ __global__ void atax_kernel1(int nx, int ny, DATA_TYPE *A, DATA_TYPE *x, DATA_TYPE *tmp) {
+                 ^~~~~~~~~~~~
+make: *** [../common.mk:39: atax.dev.o] Error 1
+[6] Error: Compilation failed for ATAX with MINI_DATASET
