@@ -1,4 +1,4 @@
-# Performance Modeling Toolkit Usage Guide
+# MIPM：Multimodal Interaction-Driven GPU Memory Access Performance Modeling
 
 This toolkit includes scripts for processing input data, training a performance model, and making predictions. It also organizes outputs in structured folders.
 
